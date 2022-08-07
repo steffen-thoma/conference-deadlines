@@ -33,7 +33,5 @@ def convert_csv_to_yaml(csv_path, yaml_path):
 
 
 if __name__ == '__main__':
-    # convert_yaml_to_csv("../_data/conferences.yml", "../_data/conferences.csv")
-    # convert_yaml_to_csv("../_data/types.yml", "../_data/types.csv")
-    # convert_csv_to_yaml("../_data/conferences_moritz.csv", "../_data/conferences.yml")
-    convert_csv_to_yaml("../../_data/conferences.csv", "../../_data/conferences.yml")
+    convert_yaml_to_csv("../../_data/conferences.yml", "../../_data/conferences.csv")
+    # convert_csv_to_yaml("../../_data/conferences.csv", "../../_data/conferences.yml")
