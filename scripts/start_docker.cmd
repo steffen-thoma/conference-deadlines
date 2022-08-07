@@ -1,1 +1,1 @@
-docker run -it --rm -p 8080:8080 --mount type=bind,source=%cd%,target=/usr/src/app deadlines bash
+docker run -it --rm -p 8080:8080 --mount type=bind,source=%cd%,target=/app deadlines bash
