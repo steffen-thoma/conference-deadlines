@@ -90,5 +90,5 @@ class ConferenceDeadline:
                     if isinstance(val, str):
                         self.as_dict()[key] += f"[{new_conference.as_dict()[key]}]"
                     else:
-                        self.as_dict()[key] = -new_conference.as_dict()[key]
+                        self.as_dict()[key] += f"[{new_conference.as_dict()[key]} (type: {type(val)}]"
         return updated

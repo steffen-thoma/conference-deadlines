@@ -8,22 +8,15 @@ import tqdm
 from bs4 import BeautifulSoup
 
 from python.config import yaml_path_conferences, csv_path_master_data, yaml_path_conference_new_candidates,yaml_path_conference_updated_candidates
-from python.core.load_rankings_from_core import get_matching_core_ranking
+from python.scraping.core_conference_rankings import get_matching_core_ranking
 from python.io import load_yaml, load_csv
-from python.models import (
+from python.scraping.models import (
     ConferenceMasterData,
     ConferenceCandidateCFP,
     ConferenceDeadline,
 )
-from python.utils import compute_conference_match_score
-from python.wikicfp.utils import (
-    date_format,
-    format_conf_date,
-    get_datetime,
-    datetime_to_string,
-    save_udapted_data,
-    get_date_format_from_start_and_end,
-)
+from python.scraping.utils import compute_conference_match_score, date_format, format_conf_date, get_datetime, \
+    datetime_to_string, save_updated_data, get_date_format_from_start_and_end
 
 project_root = Path(__file__).parent.parent
 
@@ -35,15 +28,13 @@ def update_conferences_from_cfp():
     conference_masterdatas = [
         ConferenceMasterData(**conf_dict)
         for conf_dict in load_csv(csv_path_master_data)
-    ][
-        0:1
-    ]  # todo: remove this
+    ]
     new_conference_deadlines = scrape_new_conference_deadlines_for_master_data(
         conference_masterdatas
     )
     new_conference_deadlines, updated_conference_deadlines = update_conference_deadlines(conference_deadlines, new_conference_deadlines)
-    save_udapted_data(new_conference_deadlines, yaml_path_conference_new_candidates)
-    save_udapted_data(updated_conference_deadlines, yaml_path_conference_updated_candidates)
+    save_updated_data(new_conference_deadlines, yaml_path_conference_new_candidates)
+    save_updated_data(updated_conference_deadlines, yaml_path_conference_updated_candidates)
     return new_conference_deadlines
 
 

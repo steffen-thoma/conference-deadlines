@@ -2,7 +2,7 @@ import dateutil.parser
 
 from python.config import csv_path_master_data, yaml_path_conferences
 from python.io import load_ai_deadlines_data, load_csv, load_yaml, save_yaml
-from python.load_data_from_wikicpf import get_date_format_from_start_and_end
+from python.scraping.wikicfp_deadlines import get_date_format_from_start_and_end
 
 time_format = '%Y/%m/%d %H:%M'
 

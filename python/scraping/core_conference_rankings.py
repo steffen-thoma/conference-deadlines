@@ -3,18 +3,18 @@ from typing import List
 
 from bs4 import BeautifulSoup
 
-from python.core.utils import table_head
-from python.models import ConferenceRanking, ConferenceDeadline
-from python.utils import compute_conference_ranking_match_score
+from python.scraping.models import ConferenceRanking, ConferenceDeadline
+from python.scraping.utils import compute_conference_ranking_match_score
 
 
 def extract_conference_ranking_link(row):
-    sub_url = row.get('onclick')[len('navigate(\''):-3]
+    sub_url = row.get("onclick")[len("navigate('") : -3]
     url = f"http://portal.core.edu.au{sub_url}"
     return url
 
+
 def scrape_core_ratings(query: str, year: int) -> List[ConferenceRanking]:
-    # Update Data
+    table_head = ['Title', 'Acronym', 'Source', 'Rank', 'DBLP', 'hasData?', 'Primary FoR', 'Comments', 'Average Rating']
     url = f"http://portal.core.edu.au/conf-ranks/?search={query}&by=all&source=CORE{year}&sort=atitle&page=1"
 
     try:
@@ -23,7 +23,10 @@ def scrape_core_ratings(query: str, year: int) -> List[ConferenceRanking]:
         print(f"Error: could not open {url}: {e}")
         return []
     soup = BeautifulSoup(page, "html.parser")
-    table = soup.select("div#search table")[0]
+    tables = soup.select("div#search table")
+    if len(tables) == 0:
+        return []
+    table = tables[0]
     tables_rows = table.find_all("tr")
     del tables_rows[0]  # remove headline
     rankings = []
