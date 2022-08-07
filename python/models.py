@@ -1,4 +1,15 @@
+from typing import Dict
 from dataclasses import dataclass
+
+
+def attributes_as_dict(instance):
+    res = {}
+    for key, val in instance.__dict__.items():
+        if key in ["__len__"]:
+            continue
+        if val not in ["", None]:
+            res[key] = val
+    return res
 
 
 @dataclass
@@ -11,6 +22,9 @@ class ConferenceMasterData:
     sub: str = ""
     hindex: str = ""
 
+    def as_dict(self) -> Dict:
+        return attributes_as_dict(self)
+
 
 @dataclass
 class ConferenceCandidateCFP:
@@ -18,6 +32,9 @@ class ConferenceCandidateCFP:
     wikicfp_link: str = ""
     full_name: str = ""
     year: int = None
+
+    def as_dict(self) -> Dict:
+        return attributes_as_dict(self)
 
 
 @dataclass
@@ -32,6 +49,9 @@ class ConferenceRanking:
     comments: str
     average_rating: str
     link: str
+
+    def as_dict(self) -> Dict:
+        return attributes_as_dict(self)
 
 
 @dataclass
@@ -56,3 +76,19 @@ class ConferenceDeadline:
     ranking_link: str = ""
     note: str = ""
     wikicfp: str = ""
+    wikicfp_comment: str = ""
+
+    def as_dict(self) -> Dict:
+        return attributes_as_dict(self)
+
+    def update_from_candidate(self, new_conference: "ConferenceDeadline"):
+        updated = False
+        for key, val in self.as_dict().items():
+            if val != new_conference.as_dict()[key]:
+                if new_conference.as_dict()[key] not in ["", None]:
+                    updated = True
+                    if isinstance(val, str):
+                        self.as_dict()[key] += f"[{new_conference.as_dict()[key]}]"
+                    else:
+                        self.as_dict()[key] = -new_conference.as_dict()[key]
+        return updated

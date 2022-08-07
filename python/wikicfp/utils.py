@@ -1,9 +1,12 @@
 import datetime
 
 import dateutil.parser
+from typing import List
+from pathlib import Path
 
 from python.config import yaml_path_conferences, project_root
 from python.io import save_yaml, save_csv
+from python.models import ConferenceDeadline
 
 datetime_format = '%Y/%m/%d %H:%M'
 date_format = '%Y/%m/%d'
@@ -30,14 +33,13 @@ def datetime_to_string(dt, format):
     return dt.strftime(format).lstrip("0").replace(" 0", " ").replace("/0", "/")
 
 
-def save_udapted_data(conference_deadlines):
+def save_udapted_data(conference_deadlines: List[ConferenceDeadline], path: Path):
     conference_deadlines = sorted(
         conference_deadlines,
-        key=lambda x: get_datetime(x['deadline']) \
-            if x['deadline'].lower() != 'tba' else datetime.datetime(3000, 1, 1)
+        key=lambda x: get_datetime(x.deadline) \
+            if x.deadline.lower() != 'tba' else datetime.datetime(3000, 1, 1)
     )
-    save_yaml(yaml_path_conferences, conference_deadlines)
-    save_csv(csv_path, conference_deadlines)
+    save_yaml(path, [c.as_dict() for c in conference_deadlines])
 
 
 def get_date_format_from_start_and_end(start: datetime.datetime, end: datetime.datetime):
