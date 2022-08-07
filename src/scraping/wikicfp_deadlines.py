@@ -38,9 +38,7 @@ def scrape_update_suggestions_from_wikicfp():
     conference_masterdatas = [
         ConferenceMasterData(**conf_dict)
         for conf_dict in load_csv(csv_path_master_data)
-    ][
-        8:10
-    ]  ## todo: remove
+    ]
     new_conference_deadlines = scrape_new_conference_deadlines_for_master_data(
         conference_masterdatas
     )
