@@ -21,10 +21,10 @@ def load_csv(path, key=None):
     return data
 
 
-def save_csv(path, data):
-    keys = list(set(sum([list(d.keys()) for d in data], [])))  # get all keys
+def save_csv(path, data, key_order=None):
+    key_order = list(set(sum([list(d.keys()) for d in data], []))) if key_order is None else key_order  # get all keys
     with open(path, 'w', newline='', encoding='utf-8') as file:
-        dict_writer = csv.DictWriter(file, keys)
+        dict_writer = csv.DictWriter(file, key_order)
         dict_writer.writeheader()
         dict_writer.writerows(data)
 
