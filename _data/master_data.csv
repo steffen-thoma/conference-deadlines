@@ -1,57 +1,57 @@
-title,full_name,wikicpf_query,wikicpf_link,ranking,hindex,sub
-icpr,International Conference on Pattern Recognition,ICPR,,B,69,ML
-iros,International Conference on Intelligent Robots and Systems,IROS,,,58,RO
-icprs,International Conference on Pattern Recognition Systems,ICPRS,,,,CV
-kdd,Knowledge Discovery and Data Mining,KDD,,,30,DM
-uai,Uncertainty in Artificial Intelligence,UAI,,,33,ML
-fg,IEEE International Conference on Automatic Face and Gesture Recognition,FG,,,-1,CV
-cikm,Conference on Information and Knowledge Management,CIKM,,,48,DM
-lrec,Language Resources and Evaluation,LREC,,,38,NLP
-aaai,Association for the Advancement of Artificial Intelligence,AAAI,,,95,ML
-sigir,International ACM SIGIR Conference on Research and Development in Information Retrieval,SIGIR,,,57,DM
-interspeech,Interspeech Conference,Interspeech,,,81,CV
-rss,Robotics: Science and Systems,RSS,,,47,RO
-pris,International Conference on Pattern Recognition and Intelligent Systems (PRIS 2022) ,PRIS,,,,"CV,RO"
-wacv,Winter Conference on Applications of Computer Vision,WACV,,A,54,CV
-icpram,International Conference on Pattern Recognition Applications and Methods,ICPRAM,,,,CV
-icml,International Conference on Machine Learning,ICML,,,135,ML
-siggraph,International Conference & Exhibition on Computer Graphics & Interactive Techniques,SIGGRAPH,,,19,CV
-icmi,International Conference on Multimodal Interaction,ICMI,,,-1,CV
-naacl,Annual Conference of the North American Chapter of the Association for Computational Linguistics,NAACL,,,105,NLP
-acml,Asian Conference on Machine Learning,ACML,,,17,ML
-ijcai,International Joint Conference on Artificial Intelligence,IJCAI,,A,105,ML
-visapp,International Conference on Computer Vision Theory and Applications,VISAPP,,,,CV
-cvpr,Conference on Computer Vision and Pattern Recognition,CVPR,,A,299,CV
-icann,International Conference on Artificial Neural Networks,ICANN,,,,ML
-sdm,SIAM International Conference on Data Mining,SDM,,,33,DM
-isr,International Symposium on Robotics,ISR,,,,RO
-crv,Conference on Robots and Vision,CRV,,,,RO
-gcpr-vmv,"German Conference on Pattern Recognition + International Symposium on Vision, Modeling, and Visualization",GCPR-VMV,,,,ML
-eacl,European Chapter of the Association for Computational Linguistics,EACL,,,36,NLP
-icme,IEEE International Conference on Multimedia and Expo,ICME,,,30,CV
-recsys,ACM Conference on Recommender Systems,RecSys,,,45,DM
-icip,IEEE International Conference in Image Processing,ICIP,,,52,CV
-aistats,International Conference on Artificial Intelligence and Statistics,AISTATS,,,52,ML
-icdm,IEEE International Conference on Data Mining,ICDM,,,-1,DM
-corl,Conference on Robot Learning,CoRL,,,,RO
-akbc,Automated Knowledge Base Construction,AKBC,,,,NLP
-icassp,"IEEE International Conference on Acoustics, Speech and Signal Processing",ICASSP,,,80,SP
-emnlp,Empirical Methods in Natural Language Processing,EMNLP,,,112,NLP
-neurips,Neural Information Processing Systems,NeurIPS,,A,198,ML
-case,Conference on Automation Science and Engineering,CASE,,,,APL
-gcpr,DAGM German Conference on Pattern Recognition,GCPR,,,,ML
-ecml-pkdd,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases,ECML-PKDD,,A,30,ML
-ecmr,European Conference on Mobile Robots,ECMR,,,,RO
-wsdm,ACM Conference on Web Search and Data Mining,WSDM,,,54,DM
-iccv,International Conference on Computer Vision,ICCV,,A,176,CV
-iclr,International Conference on Learning Representations,ICLR,,A,203,ML
-icra,IEEE International Conference on Robotics and Automation,ICRA,,,94,RO
-aamas,Autonomous Agents and Multiagent Systems,AAMAS,,,25,ML
-etfa,IEEE International Conference on Emerging Technologies and Factory Automation,ETFA,,,,APL
-mm,ACM International Conference on Multimedia,MM,,,58,CV
-icmla,IEEE International Conference on Machine Learning and Applications,ICMLA,,C,,APL
-ias,International Conference on Intelligent Autonomous Systems,IAS,,,,RO
-bmvc,British Machine Vision Conference,BMVC,,,57,CV
-chil,"Conference on Health, Inference, and Learning",CHIL,,,-1,ML
-acl,Annual Meeting of the Association for Computational Linguistcs and International Joint Conference on Natural Language Processing,ACL,,,157,NLP
-icaps,International Conference on Automated Planning and Scheduling,ICAPS,,,28,ML
+title,full_name,wikicpf_query,wikicpf_link,sub
+icpr,International Conference on Pattern Recognition,ICPR,,ML
+iros,International Conference on Intelligent Robots and Systems,IROS,,RO
+icprs,International Conference on Pattern Recognition Systems,ICPRS,,CV
+kdd,Knowledge Discovery and Data Mining,KDD,,DM
+uai,Uncertainty in Artificial Intelligence,UAI,,ML
+fg,IEEE International Conference on Automatic Face and Gesture Recognition,FG,,CV
+cikm,Conference on Information and Knowledge Management,CIKM,,DM
+lrec,Language Resources and Evaluation,LREC,,NLP
+aaai,Association for the Advancement of Artificial Intelligence,AAAI,,ML
+sigir,International ACM SIGIR Conference on Research and Development in Information Retrieval,SIGIR,,DM
+interspeech,Interspeech Conference,Interspeech,,CV
+rss,Robotics: Science and Systems,RSS,,RO
+pris,International Conference on Pattern Recognition and Intelligent Systems (PRIS 2022) ,PRIS,,"CV,RO"
+wacv,Winter Conference on Applications of Computer Vision,WACV,,CV
+icpram,International Conference on Pattern Recognition Applications and Methods,ICPRAM,,CV
+icml,International Conference on Machine Learning,ICML,,ML
+siggraph,International Conference & Exhibition on Computer Graphics & Interactive Techniques,SIGGRAPH,,CV
+icmi,International Conference on Multimodal Interaction,ICMI,,CV
+naacl,Annual Conference of the North American Chapter of the Association for Computational Linguistics,NAACL,,NLP
+acml,Asian Conference on Machine Learning,ACML,,ML
+ijcai,International Joint Conference on Artificial Intelligence,IJCAI,,ML
+visapp,International Conference on Computer Vision Theory and Applications,VISAPP,,CV
+cvpr,Conference on Computer Vision and Pattern Recognition,CVPR,,CV
+icann,International Conference on Artificial Neural Networks,ICANN,,ML
+sdm,SIAM International Conference on Data Mining,SDM,,DM
+isr,International Symposium on Robotics,ISR,,RO
+crv,Conference on Robots and Vision,CRV,,RO
+gcpr-vmv,"German Conference on Pattern Recognition + International Symposium on Vision, Modeling, and Visualization",GCPR-VMV,,ML
+eacl,European Chapter of the Association for Computational Linguistics,EACL,,NLP
+icme,IEEE International Conference on Multimedia and Expo,ICME,,CV
+recsys,ACM Conference on Recommender Systems,RecSys,,DM
+icip,IEEE International Conference in Image Processing,ICIP,,CV
+aistats,International Conference on Artificial Intelligence and Statistics,AISTATS,,ML
+icdm,IEEE International Conference on Data Mining,ICDM,,DM
+corl,Conference on Robot Learning,CoRL,,RO
+akbc,Automated Knowledge Base Construction,AKBC,,NLP
+icassp,"IEEE International Conference on Acoustics, Speech and Signal Processing",ICASSP,,SP
+emnlp,Empirical Methods in Natural Language Processing,EMNLP,,NLP
+neurips,Neural Information Processing Systems,NeurIPS,,ML
+case,Conference on Automation Science and Engineering,CASE,,APL
+gcpr,DAGM German Conference on Pattern Recognition,GCPR,,ML
+ecml-pkdd,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases,ECML-PKDD,,ML
+ecmr,European Conference on Mobile Robots,ECMR,,RO
+wsdm,ACM Conference on Web Search and Data Mining,WSDM,,DM
+iccv,International Conference on Computer Vision,ICCV,,CV
+iclr,International Conference on Learning Representations,ICLR,,ML
+icra,IEEE International Conference on Robotics and Automation,ICRA,,RO
+aamas,Autonomous Agents and Multiagent Systems,AAMAS,,ML
+etfa,IEEE International Conference on Emerging Technologies and Factory Automation,ETFA,,APL
+mm,ACM International Conference on Multimedia,MM,,CV
+icmla,IEEE International Conference on Machine Learning and Applications,ICMLA,,APL
+ias,International Conference on Intelligent Autonomous Systems,IAS,,RO
+bmvc,British Machine Vision Conference,BMVC,,CV
+chil,"Conference on Health, Inference, and Learning",CHIL,,ML
+acl,Annual Meeting of the Association for Computational Linguistcs and International Joint Conference on Natural Language Processing,ACL,,NLP
+icaps,International Conference on Automated Planning and Scheduling,ICAPS,,ML
