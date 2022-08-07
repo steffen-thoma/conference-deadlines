@@ -4,7 +4,7 @@ from typing import List
 from bs4 import BeautifulSoup
 
 from python.scraping.models import ConferenceRanking, ConferenceDeadline
-from python.scraping.utils import compute_conference_ranking_match_score
+from python.scraping.matching import compute_conference_ranking_match_score
 
 
 def extract_conference_ranking_link(row):

@@ -1,9 +1,8 @@
-from typing import Dict
 from dataclasses import dataclass
-
 from datetime import datetime, date
+from typing import Dict
 
-from python.scraping.utils_datetime import get_datetime, datetime_to_string, datetime_format, date_format
+from python.scraping.utils import datetime_to_string, datetime_format, date_format
 
 
 def attributes_as_dict(instance):
@@ -12,10 +11,10 @@ def attributes_as_dict(instance):
         if key in ["__len__"]:
             continue
         if val not in ["", None]:
-            if key in ["deadline", "abstract_deadline", "start", "end"]:
-                if isinstance(val, str):
-                    print(val)
+            if key in ["deadline", "abstract_deadline"]:
                 res[key] = datetime_to_string(val, datetime_format)
+            elif key in ["start", "end"]:
+                res[key] = datetime_to_string(val, date_format)
             else:
                 res[key] = val
     return res
@@ -88,10 +87,19 @@ class ConferenceDeadline:
     wikicfp_comment: str = ""
 
     def __post_init__(self):
+        # Convert date strings into datetime objects
         for key in ["deadline", "abstract_deadline", "start", "end"]:
             val = self.__dict__[key]
-            if val is not None and not isinstance(val, datetime) and not isinstance(val, date):
-                for dt_format in [date_format, datetime_format, datetime_format + ":%S"]:
+            if (
+                val is not None
+                and not isinstance(val, datetime)
+                and not isinstance(val, date)
+            ):
+                for dt_format in [
+                    date_format,
+                    datetime_format,
+                    datetime_format + ":%S",
+                ]:
                     try:
                         d = datetime.strptime(val, dt_format)
                         break

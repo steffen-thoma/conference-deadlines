@@ -13,19 +13,20 @@ from python.config import (
     yaml_path_conference_new_candidates,
     yaml_path_conference_updated_candidates,
 )
-from python.scraping.core_conference_rankings import get_matching_core_ranking
 from python.io import load_yaml, load_csv, save_yaml
+from python.scraping.core_conference_rankings import get_matching_core_ranking
 from python.scraping.models import (
     ConferenceMasterData,
     ConferenceCandidateCFP,
     ConferenceDeadline,
 )
+from python.scraping.matching import compute_conference_match_score
 from python.scraping.utils import (
-    compute_conference_match_score,
-    save_updated_data,
+    format_conf_date,
+    get_datetime,
+    datetime_to_string,
+    get_date_format_from_start_and_end,
 )
-from python.scraping.utils_datetime import format_conf_date, get_datetime, datetime_to_string, \
-    get_date_format_from_start_and_end, date_format
 
 project_root = Path(__file__).parent.parent
 
@@ -37,7 +38,9 @@ def update_conferences_from_cfp():
     conference_masterdatas = [
         ConferenceMasterData(**conf_dict)
         for conf_dict in load_csv(csv_path_master_data)
-    ][8:10]
+    ][
+        8:10
+    ]  ## todo: remove
     new_conference_deadlines = scrape_new_conference_deadlines_for_master_data(
         conference_masterdatas
     )
@@ -110,7 +113,6 @@ def update_conference_deadlines(
             if updated:
                 updated_conference_deadlines.append(existing_entry)
         else:
-            print(f"{new_conference.id}: added conference: {new_conference}")
             new_conference_deadlines.append(new_conference)
     return new_conference_deadlines, updated_conference_deadlines
 

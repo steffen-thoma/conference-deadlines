@@ -1,7 +1,13 @@
 import csv
+import datetime
+from pathlib import Path
+from typing import List
 
 import requests
 import yaml
+
+from python.scraping.models import ConferenceDeadline
+from python.scraping.utils import get_datetime
 
 
 def load_ai_deadlines_data():
@@ -40,3 +46,12 @@ def load_yaml(path, key=None):
 def save_yaml(path, data):
     with open(path, 'w', encoding='utf-8') as file:
         yaml.safe_dump(data, file, sort_keys=False)
+
+
+def save_updated_data(conference_deadlines: List[ConferenceDeadline], path: Path):
+    conference_deadlines = sorted(
+        conference_deadlines,
+        key=lambda x: get_datetime(x.deadline) \
+            if x.deadline.lower() != 'tba' else datetime.datetime(3000, 1, 1)
+    )
+    save_yaml(path, [c.as_dict() for c in conference_deadlines])
