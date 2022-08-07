@@ -31,7 +31,7 @@ from src.scraping.utils import (
 project_root = Path(__file__).parent.parent
 
 
-def update_conferences_from_cfp():
+def scrape_update_suggestions_from_wikicfp():
     conference_deadlines = [
         ConferenceDeadline(**data) for data in load_yaml(yaml_path_conferences)
     ]

@@ -1,4 +1,4 @@
-from src.scraping.wikicfp_deadlines import update_conferences_from_cfp
+from src.scraping.wikicfp_deadlines import scrape_update_suggestions_from_wikicfp
 
 if __name__ == "__main__":
-    update_conferences_from_cfp()
+    scrape_update_suggestions_from_wikicfp()
