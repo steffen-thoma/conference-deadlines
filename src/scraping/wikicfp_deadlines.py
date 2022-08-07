@@ -258,6 +258,3 @@ def convert_wikicfp2deadline(
     }
     return ConferenceDeadline(**data)
 
-
-if __name__ == "__main__":
-    update_conferences_from_cfp()
