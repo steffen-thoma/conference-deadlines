@@ -117,7 +117,7 @@ class ConferenceDeadline:
         for key in new_conference.as_dict().keys():
             val = new_conference.__dict__[key]
             if key in self.as_dict().keys():
-                if val != self.as_dict()[key]:
+                if val != self.__dict__[key]:
                     updated = True
                     if isinstance(val, str):
                         self.__dict__[key] = f"{val} (NEW)"
