@@ -18,7 +18,10 @@ def get_datetime(datetime_string: str):
             # print(f"{e}          [for {format}]")
             pass
     if date is None:
-        date = dateutil.parser.parse(datetime_string)
+        try:
+            date = dateutil.parser.parse(datetime_string)
+        except Exception as e:
+            pass
     return date
 
 

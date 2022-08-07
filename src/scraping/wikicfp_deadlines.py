@@ -76,23 +76,21 @@ def scrape_new_conference_deadlines_for_master_data(
 def scrape_new_conference_deadline(
     conference: ConferenceMasterData,
 ) -> ConferenceDeadline:
+    """
+    Note: Wee add sleep of 5 seconds, since that is the maximum, see http://wikicfp.com/cfp/data.jsp
+    """
     conference_candidates = scrape_conference_candidates_from_wikicpf(conference)
     best_conference_candidates = find_conference_from_candidates(
         conference, conference_candidates
     )
     for conference_data in best_conference_candidates:
-        time.sleep(
-            5
-        )  # max 1 request every 5 seconds, see http://wikicfp.com/cfp/data.jsp
-        try:
-            conference_details = extract_data_from_website(conference_data.wikicfp_link)
-            conference_deadline = convert_wikicfp2deadline(
-                {**conference_details, **conference_data.__dict__}, conference
-            )
-            return conference_deadline
-        except Exception as e:
-            print(f"Error {conference.title}: {e} (candidate: {conference_data})")
-    time.sleep(5)  # max 1 request every 5 seconds, see http://wikicfp.com/cfp/data.jsp
+        time.sleep(5)
+        conference_details = extract_data_from_website(conference_data.wikicfp_link)
+        conference_deadline = convert_wikicfp2deadline(
+            {**conference_details, **conference_data.__dict__}, conference
+        )
+        return conference_deadline  # currently only use best one
+    time.sleep(5)
 
 
 def update_conference_deadlines(
@@ -229,7 +227,8 @@ def convert_wikicfp2deadline(
     abstract_deadline = (
         get_datetime(conference_data["deadline_abstract"])
         if "deadline_abstract" in conference_data.keys()
-        else None
+        and conference_data["deadline_abstract"] is not None
+        else ""
     )
     data = {
         "title": conference.title.upper(),
@@ -255,4 +254,3 @@ def convert_wikicfp2deadline(
         "wikicfp": conference_data["wikicfp"],
     }
     return ConferenceDeadline(**data)
-
