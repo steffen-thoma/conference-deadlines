@@ -7,16 +7,25 @@ from typing import List, Dict
 import tqdm
 from bs4 import BeautifulSoup
 
-from python.config import yaml_path_conferences, csv_path_master_data, yaml_path_conference_new_candidates,yaml_path_conference_updated_candidates
+from python.config import (
+    yaml_path_conferences,
+    csv_path_master_data,
+    yaml_path_conference_new_candidates,
+    yaml_path_conference_updated_candidates,
+)
 from python.scraping.core_conference_rankings import get_matching_core_ranking
-from python.io import load_yaml, load_csv
+from python.io import load_yaml, load_csv, save_yaml
 from python.scraping.models import (
     ConferenceMasterData,
     ConferenceCandidateCFP,
     ConferenceDeadline,
 )
-from python.scraping.utils import compute_conference_match_score, date_format, format_conf_date, get_datetime, \
-    datetime_to_string, save_updated_data, get_date_format_from_start_and_end
+from python.scraping.utils import (
+    compute_conference_match_score,
+    save_updated_data,
+)
+from python.scraping.utils_datetime import format_conf_date, get_datetime, datetime_to_string, \
+    get_date_format_from_start_and_end, date_format
 
 project_root = Path(__file__).parent.parent
 
@@ -28,13 +37,23 @@ def update_conferences_from_cfp():
     conference_masterdatas = [
         ConferenceMasterData(**conf_dict)
         for conf_dict in load_csv(csv_path_master_data)
-    ]
+    ][8:10]
     new_conference_deadlines = scrape_new_conference_deadlines_for_master_data(
         conference_masterdatas
     )
-    new_conference_deadlines, updated_conference_deadlines = update_conference_deadlines(conference_deadlines, new_conference_deadlines)
-    save_updated_data(new_conference_deadlines, yaml_path_conference_new_candidates)
-    save_updated_data(updated_conference_deadlines, yaml_path_conference_updated_candidates)
+    (
+        new_conference_deadlines,
+        updated_conference_deadlines,
+    ) = update_conference_deadlines(conference_deadlines, new_conference_deadlines)
+
+    save_yaml(
+        yaml_path_conference_new_candidates,
+        [c.as_dict() for c in new_conference_deadlines],
+    )
+    save_yaml(
+        yaml_path_conference_updated_candidates,
+        [c.as_dict() for c in updated_conference_deadlines],
+    )
     return new_conference_deadlines
 
 
@@ -208,23 +227,23 @@ def convert_wikicfp2deadline(
 ) -> ConferenceDeadline:
     start, end = [get_datetime(d) for d in conference_data["date"].split("-")]
     abstract_deadline = (
-        f"{datetime_to_string(get_datetime(conference_data['deadline_abstract']), date_format)} 23:59"
+        get_datetime(conference_data["deadline_abstract"])
         if "deadline_abstract" in conference_data.keys()
-        else ""
+        else None
     )
     data = {
         "title": conference.title.upper(),
         "full_name": conference_data["full_name"],
         "hindex": conference.hindex,
         "ranking": conference.ranking,
-        "year": str(conference_data["year"]),
+        "year": int(conference_data["year"]),
         "id": f"{conference.title}{str(conference_data['year'])[2:]}",
         "link": conference_data["link"] if "link" in conference_data.keys() else None,
-        "deadline": f"{datetime_to_string(get_datetime(conference_data['deadline_submission']), date_format)} 23:59",
+        "deadline": get_datetime(conference_data["deadline_submission"]),
         "abstract_deadline": abstract_deadline,
         "timezone": "",
-        "start": datetime_to_string(start, date_format),
-        "end": datetime_to_string(end, date_format),
+        "start": start,
+        "end": end,
         "date": get_date_format_from_start_and_end(start, end),
         "place": conference_data["location"]
         if "location" in conference_data.keys()

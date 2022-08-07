@@ -1,6 +1,10 @@
 from typing import Dict
 from dataclasses import dataclass
 
+from datetime import datetime, date
+
+from python.scraping.utils_datetime import get_datetime, datetime_to_string, datetime_format, date_format
+
 
 def attributes_as_dict(instance):
     res = {}
@@ -8,7 +12,12 @@ def attributes_as_dict(instance):
         if key in ["__len__"]:
             continue
         if val not in ["", None]:
-            res[key] = val
+            if key in ["deadline", "abstract_deadline", "start", "end"]:
+                if isinstance(val, str):
+                    print(val)
+                res[key] = datetime_to_string(val, datetime_format)
+            else:
+                res[key] = val
     return res
 
 
@@ -61,13 +70,13 @@ class ConferenceDeadline:
     id: str = ""
     full_name: str = ""
     link: str = ""
-    deadline: str = ""
-    abstract_deadline: str = ""
+    deadline: datetime = None
+    abstract_deadline: datetime = None
     timezone: str = ""
     place: str = ""
     date: str = ""
-    start: str = ""
-    end: str = ""
+    start: datetime = None
+    end: datetime = None
     paperslink: str = ""
     pwclink: str = ""
     hindex: int = None
@@ -78,17 +87,37 @@ class ConferenceDeadline:
     wikicfp: str = ""
     wikicfp_comment: str = ""
 
+    def __post_init__(self):
+        for key in ["deadline", "abstract_deadline", "start", "end"]:
+            val = self.__dict__[key]
+            if val is not None and not isinstance(val, datetime) and not isinstance(val, date):
+                for dt_format in [date_format, datetime_format, datetime_format + ":%S"]:
+                    try:
+                        d = datetime.strptime(val, dt_format)
+                        break
+                    except:
+                        d = None
+                        pass
+                self.__dict__[key] = d
+        return self
+
     def as_dict(self) -> Dict:
         return attributes_as_dict(self)
 
     def update_from_candidate(self, new_conference: "ConferenceDeadline"):
         updated = False
-        for key, val in self.as_dict().items():
-            if val != new_conference.as_dict()[key]:
-                if new_conference.as_dict()[key] not in ["", None]:
+        for key in new_conference.as_dict().keys():
+            val = new_conference.__dict__[key]
+            if key in self.as_dict().keys():
+                if val != self.as_dict()[key]:
                     updated = True
                     if isinstance(val, str):
-                        self.as_dict()[key] += f"[{new_conference.as_dict()[key]}]"
+                        self.__dict__[key] = f"{val} (NEW)"
                     else:
-                        self.as_dict()[key] += f"[{new_conference.as_dict()[key]} (type: {type(val)}]"
+                        self.__dict__[key] = val
+            else:
+                if isinstance(val, str):
+                    self.__dict__[key] = f"{val} (NEW)"
+                else:
+                    self.__dict__[key] = val
         return updated
