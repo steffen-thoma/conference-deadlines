@@ -1,6 +1,6 @@
 import difflib
 
-from python.scraping.models import (
+from src.scraping.models import (
     ConferenceMasterData,
     ConferenceCandidateCFP,
     ConferenceRanking,

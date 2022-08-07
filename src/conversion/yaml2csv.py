@@ -1,7 +1,7 @@
 import pandas as pd
 import yaml
 
-from python.io import load_yaml, save_csv
+from src.io import load_yaml, save_csv
 
 
 def convert_yaml_to_csv(yaml_path, csv_path):

@@ -1,5 +1,5 @@
-from python.config import csv_path_master_data, yaml_path_conferences
-from python.io import load_csv, save_csv, load_yaml
+from src.config import csv_path_master_data, yaml_path_conferences
+from src.io import load_csv, save_csv, load_yaml
 
 
 def update_master_data_from_conferences():

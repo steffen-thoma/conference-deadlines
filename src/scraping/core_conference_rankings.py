@@ -3,8 +3,8 @@ from typing import List
 
 from bs4 import BeautifulSoup
 
-from python.scraping.models import ConferenceRanking, ConferenceDeadline
-from python.scraping.matching import compute_conference_ranking_match_score
+from src.scraping.models import ConferenceRanking, ConferenceDeadline
+from src.scraping.matching import compute_conference_ranking_match_score
 
 
 def extract_conference_ranking_link(row):

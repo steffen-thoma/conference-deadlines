@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import datetime, date
 from typing import Dict
 
-from python.scraping.utils import datetime_to_string, datetime_format, date_format
+from src.scraping.utils import datetime_to_string, datetime_format, date_format
 
 
 def attributes_as_dict(instance):

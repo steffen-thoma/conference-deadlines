@@ -6,8 +6,8 @@ from typing import List
 import requests
 import yaml
 
-from python.scraping.models import ConferenceDeadline
-from python.scraping.utils import get_datetime
+from src.scraping.models import ConferenceDeadline
+from src.scraping.utils import get_datetime
 
 
 def load_ai_deadlines_data():

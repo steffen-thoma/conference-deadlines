@@ -7,21 +7,21 @@ from typing import List, Dict
 import tqdm
 from bs4 import BeautifulSoup
 
-from python.config import (
+from src.config import (
     yaml_path_conferences,
     csv_path_master_data,
     yaml_path_conference_new_candidates,
     yaml_path_conference_updated_candidates,
 )
-from python.io import load_yaml, load_csv, save_yaml
-from python.scraping.core_conference_rankings import get_matching_core_ranking
-from python.scraping.models import (
+from src.io import load_yaml, load_csv, save_yaml
+from src.scraping.core_conference_rankings import get_matching_core_ranking
+from src.scraping.models import (
     ConferenceMasterData,
     ConferenceCandidateCFP,
     ConferenceDeadline,
 )
-from python.scraping.matching import compute_conference_match_score
-from python.scraping.utils import (
+from src.scraping.matching import compute_conference_match_score
+from src.scraping.utils import (
     format_conf_date,
     get_datetime,
     datetime_to_string,
