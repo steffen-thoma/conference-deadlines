@@ -12,7 +12,7 @@ def attributes_as_dict(instance):
             continue
         if val not in ["", None]:
             if key in ["deadline", "abstract_deadline"]:
-                res[key] = datetime_to_string(val, datetime_format)
+                res[key] = datetime_to_string(val, date_format) + " 23:59"
             elif key in ["start", "end"]:
                 res[key] = datetime_to_string(val, date_format)
             else:
