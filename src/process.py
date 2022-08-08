@@ -4,27 +4,22 @@
 # Sort and Clean conference data.
 # It writes to `sorted_data.yml` and `cleaned_data.yml`, copy those to the conference.yml after screening.
 
-import yaml
 import datetime
-import sys
-from shutil import copyfile
-from builtins import input
+from collections import OrderedDict
+from pathlib import Path
+
 import pytz
-
-import pdb
-
-try:
-    # for src newer than 2.7
-    from collections import OrderedDict
-except ImportError:
-    # use backport from pypi
-    from ordereddict import OrderedDict
-
-try:
-    from yaml import CLoader as Loader, CDumper as Dumper
-except ImportError:
-    from yaml import Loader, Dumper
+import yaml
+from yaml import CLoader as Loader, CDumper as Dumper
 from yaml.representer import SafeRepresenter
+
+from src.config import (
+    yaml_path_conference_new_candidates,
+    yaml_path_conference_updated_candidates,
+    yaml_path_conferences,
+)
+from src.scraping.utils import datetime_format, date_format
+
 _mapping_tag = yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG
 
 
@@ -48,83 +43,63 @@ def ordered_dump(data, stream=None, Dumper=yaml.Dumper, **kwds):
 
     def _dict_representer(dumper, data):
         return dumper.represent_mapping(
-            yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, data.items())
+            yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, data.items()
+        )
 
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
 
-dateformat = '%Y/%m/%d %H:%M'
+default_timezone = "UTC"
 tba_words = ["tba", "tbd"]
 
-right_now = datetime.datetime.utcnow().replace(
-    microsecond=0).strftime(dateformat)
 
+def sort_data(yaml_path: Path, overwrite=True):
+    with open(yaml_path.as_posix(), "r") as stream:
+        try:
+            data = yaml.load(stream, Loader=Loader)
+            conf = [x for x in data if x["deadline"].lower() not in tba_words]
+            tba = [x for x in data if x["deadline"].lower() in tba_words]
 
-# Helper function for yes no questions
-def query_yes_no(question, default="no"):
-    """Ask a yes/no question via input() and return their answer.
+            def datesort(conf):
+                deadline_str = conf.get("deadline", "")
+                for format in [date_format, datetime_format + ":%S"]:
+                    try:
+                        deadline = datetime.datetime.strptime(deadline_str, format)
+                        break
+                    except ValueError:
+                        pass
+                    deadline = datetime.datetime.utcnow()
+                timezone = (
+                    conf.get("timezone", default_timezone)
+                    .replace("PDT", "UTC-7")
+                    .replace("UTC+", "Etc/GMT-")
+                    .replace("UTC-", "Etc/GMT+")
+                )
+                return pytz.utc.normalize(
+                    deadline.replace(tzinfo=pytz.timezone(timezone))
+                )
 
-    "question" is a string that is presented to the user.
-    "default" is the presumed answer if the user just hits <Enter>.
-        It must be "yes" (the default), "no" or None (meaning
-        an answer is required of the user).
+            conf.sort(key=datesort, reverse=True)
+            conf = tba + conf
 
-    The "answer" return value is True for "yes" or False for "no".
-    """
-    valid = {"yes": True, "y": True, "ye": True, "no": False, "n": False}
-    if default is None:
-        prompt = " [y/n] "
-    elif default == "yes":
-        prompt = " [Y/n] "
-    elif default == "no":
-        prompt = " [y/N] "
-    else:
-        raise ValueError("invalid default answer: '%s'" % default)
-
-    while True:
-        sys.stdout.write(question + prompt)
-        choice = input().lower()
-        if default is not None and choice == '':
-            return valid[default]
-        elif choice in valid:
-            return valid[choice]
-        else:
-            sys.stdout.write("Please respond with 'yes' or 'no' "
-                             "(or 'y' or 'n').\n")
-
-
-# Sort:
-
-with open("../_data/conference_new_candidates.yml", 'r') as stream:
-    try:
-        data = yaml.load(stream, Loader=Loader)
-        print("Initial Sorting:")
-        for q in data:
-            print(q["deadline"], " - ", q["title"])
-        print("\n\n")
-        conf = [x for x in data if x['deadline'].lower() not in tba_words]
-        tba = [x for x in data if x['deadline'].lower() in tba_words]
-
-        # just sort:
-        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(x['deadline'], dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))))
-        print("Date Sorting:")
-        for q in conf + tba:
-            print(q["deadline"], " - ", q["title"])
-        print("\n\n")
-        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(x['deadline'], dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))).strftime(dateformat) < right_now)
-        print("Date and Passed Deadline Sorting with tba:")
-        for q in conf + tba:
-            print(q["deadline"], " - ", q["title"])
-        print("\n\n")
-
-        with open('sorted_data.yml', 'w') as outfile:
-            for line in ordered_dump(
+            output_yaml = (
+                yaml_path
+                if overwrite
+                else yaml_path.parent / f"{yaml_path.stem}_sorted{yaml_path.suffix}"
+            )
+            with open(output_yaml.as_posix(), "w") as outfile:
+                for line in ordered_dump(
                     conf + tba,
                     Dumper=yaml.SafeDumper,
                     default_flow_style=False,
-                    explicit_start=True).splitlines():
-                outfile.write(line.replace('- title:', '\n- title:'))
-                outfile.write('\n')
-    except yaml.YAMLError as exc:
-        print(exc)
+                    explicit_start=True,
+                ).splitlines():
+                    outfile.write(line.replace("- title:", "\n- title:"))
+                    outfile.write("\n")
+        except yaml.YAMLError as exc:
+            print(exc)
+
+
+if __name__ == "__main__":
+    sort_data(yaml_path_conferences)
