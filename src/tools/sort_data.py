@@ -54,7 +54,7 @@ default_timezone = "UTC"
 tba_words = ["tba", "tbd"]
 
 
-def sort_data(yaml_path: Path, overwrite=True):
+def sort_data(yaml_path: Path, overwrite):
     with open(yaml_path.as_posix(), "r") as stream:
         try:
             data = yaml.load(stream, Loader=Loader)
@@ -102,4 +102,4 @@ def sort_data(yaml_path: Path, overwrite=True):
 
 
 if __name__ == "__main__":
-    sort_data(yaml_path_conferences)
+    sort_data(yaml_path_conferences, overwrite=True)
