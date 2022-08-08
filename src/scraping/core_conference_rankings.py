@@ -14,7 +14,17 @@ def extract_conference_ranking_link(row):
 
 
 def scrape_core_ratings(query: str, year: int) -> List[ConferenceRanking]:
-    table_head = ['Title', 'Acronym', 'Source', 'Rank', 'DBLP', 'hasData?', 'Primary FoR', 'Comments', 'Average Rating']
+    table_head = [
+        "Title",
+        "Acronym",
+        "Source",
+        "Rank",
+        "DBLP",
+        "hasData?",
+        "Primary FoR",
+        "Comments",
+        "Average Rating",
+    ]
     url = f"http://portal.core.edu.au/conf-ranks/?search={query}&by=all&source=CORE{year}&sort=atitle&page=1"
 
     try:
@@ -54,7 +64,3 @@ def get_matching_core_ranking(conference: ConferenceDeadline) -> ConferenceRanki
         score = compute_conference_ranking_match_score(conference, conference_ranking)
         if score == 1:
             return conference_ranking
-
-
-if __name__ == "__main__":
-    scrape_core_ratings("icml", 2021)

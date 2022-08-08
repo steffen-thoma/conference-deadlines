@@ -4,8 +4,8 @@ import dateutil.parser
 
 format_wikicpf = "%b %d, %Y"
 format_conf_date = "%B %d, %Y"
-datetime_format = '%Y-%m-%d %H:%M'  # output format
-date_format = '%Y-%m-%d'  # output format
+datetime_format = "%Y-%m-%d %H:%M"  # output format
+date_format = "%Y-%m-%d"  # output format
 
 
 def get_datetime(datetime_string: str):
@@ -29,8 +29,12 @@ def datetime_to_string(dt, format):
     return dt.strftime(format).lstrip("0").replace(" 0", " ").replace("/0", "/")
 
 
-def get_date_format_from_start_and_end(start: datetime.datetime, end: datetime.datetime):
-    date = f"{datetime_to_string(start, '%B %d')} - {datetime_to_string(end, '%d, %Y')}" if start.month == end.month \
+def get_date_format_from_start_and_end(
+    start: datetime.datetime, end: datetime.datetime
+):
+    date = (
+        f"{datetime_to_string(start, '%B %d')} - {datetime_to_string(end, '%d, %Y')}"
+        if start.month == end.month
         else f"{datetime_to_string(start, '%B %d')} - {datetime_to_string(end, '%B %d, %Y')}"
+    )
     return date
-
