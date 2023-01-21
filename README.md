@@ -76,7 +76,7 @@ To test/develop the site locally with Docker:
 
 - Run
   ```shell
-  docker run --mount type=bind,source=${PWD},target=/app -p 4000:4000 -it --rm --name conference-deadlines jekyll-cd
+  docker run --mount type=bind,source=${PWD},target=/srv/jekyll -p 4000:4000 -it --rm --name conference-deadlines jekyll/jekyll:3.8 jekyll serve
   ```
 
 ## License
