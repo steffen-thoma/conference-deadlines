@@ -7,7 +7,8 @@
 }
 
 .deadline-text {
-    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 @media only screen and (max-width: 550px) {

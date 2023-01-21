@@ -14,7 +14,7 @@ import pytz
 import pdb
 
 try:
-    # for python newer than 2.7
+    # for src newer than 2.7
     from collections import OrderedDict
 except ImportError:
     # use backport from pypi

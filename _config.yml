@@ -15,3 +15,6 @@ markdown: kramdown
 ga_id: UA-166050497-2
 
 include: ["_pages"]
+exclude:
+  - src
+  - scripts
