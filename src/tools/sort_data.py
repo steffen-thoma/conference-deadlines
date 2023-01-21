@@ -63,16 +63,18 @@ def sort_data(yaml_path: Path, overwrite):
         tba = [x for x in data if x.get("deadline", "").lower() in tba_words]
 
         def datesort(conf: ConferenceDeadline):
-            deadline= conf.deadline if conf.deadline is not None else datetime.datetime.utcnow()
+            deadline = (
+                conf.deadline
+                if conf.deadline is not None
+                else datetime.datetime.utcnow()
+            )
             timezone = (
                 (conf.timezone if conf.timezone is not None else default_timezone)
                 .replace("PDT", "UTC-7")
                 .replace("UTC+", "Etc/GMT-")
                 .replace("UTC-", "Etc/GMT+")
             )
-            return pytz.utc.normalize(
-                deadline.replace(tzinfo=pytz.timezone(timezone))
-            )
+            return pytz.utc.normalize(deadline.replace(tzinfo=pytz.timezone(timezone)))
 
         conf = [ConferenceDeadline(**d) for d in conf]
         tba = [ConferenceDeadline(**d) for d in tba]

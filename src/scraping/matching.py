@@ -41,5 +41,3 @@ def compute_conference_ranking_match_score(
         )
     )
     return score
-
-
