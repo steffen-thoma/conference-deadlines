@@ -58,8 +58,8 @@ def sort_data(yaml_path: Path, overwrite):
     with open(yaml_path.as_posix(), "r") as stream:
         try:
             data = yaml.load(stream, Loader=Loader)
-            conf = [x for x in data if x["deadline"].lower() not in tba_words]
-            tba = [x for x in data if x["deadline"].lower() in tba_words]
+            conf = [x for x in data if x.get("deadline", "").lower() not in tba_words]
+            tba = [x for x in data if x.get("deadline", "").lower() in tba_words]
 
             def datesort(conf):
                 deadline_str = conf.get("deadline", "")
