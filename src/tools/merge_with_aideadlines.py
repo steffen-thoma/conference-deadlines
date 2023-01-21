@@ -27,23 +27,22 @@ def update_data_with_ai_deadlines_data():
     # Adjust data
     for conf_id, conf_data in deadlines_info.items():
         for key, val in conf_data.items():
-            if key == "note":
+            if key == "note" and val is not None:
                 conf_data[key] = val.replace("<b>NOTE</b>: ", "")
             if key == "date":
                 if conf_data.get("start", None) is not None and conf_data.get("end", None) is not None:
-                    start = dateutil.parser.parse(conf_data["start"])
-                    end = dateutil.parser.parse(conf_data["end"])
+                    start = conf_data["start"]
+                    end = conf_data["end"]
+                    if isinstance(start, str):
+                        start = dateutil.parser.parse(start)
+                    if isinstance(end, str):
+                        end = dateutil.parser.parse(end)
                     conf_data[key] = get_date_format_from_start_and_end(start, end)
             if "deadline" in key:
                 if conf_data["deadline"].lower() == "tba":
                     continue
                 date = dateutil.parser.parse(val)
                 conf_data[key] = date.strftime(time_format)
-                # try:
-                #     conf_data[key] = datetime.datetime.strptime(val, '%Y-%m-%d %H:%M:%S').strftime(time_format)
-                # except:
-                #     conf_data[key] = datetime.datetime.strptime(val, format_datetime).strftime(time_format)
-                #     pass  # format correct
     save_yaml(yaml_path_conferences, list(deadlines_info.values()))
 
 
