@@ -55,8 +55,8 @@ def save_yaml(path, data):
 def save_updated_data(conference_deadlines: List[ConferenceDeadline], path: Path):
     conference_deadlines = sorted(
         conference_deadlines,
-        key=lambda x: get_datetime(x.deadline)
-        if x.deadline.lower() != "tba"
+        key=lambda x: x.deadline
+        if x.deadline is not None
         else datetime.datetime(3000, 1, 1),
     )
     save_yaml(path, [c.as_dict() for c in conference_deadlines])

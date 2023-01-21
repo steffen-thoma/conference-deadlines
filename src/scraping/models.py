@@ -101,6 +101,8 @@ class ConferenceDeadline:
                     datetime_format + ":%S",
                 ]:
                     try:
+                        if "/" in val:
+                            dt_format = dt_format.replace("-", "/")
                         d = datetime.strptime(val, dt_format)
                         break
                     except:
@@ -119,13 +121,7 @@ class ConferenceDeadline:
             if key in self.as_dict().keys():
                 if val != self.__dict__[key]:
                     updated = True
-                    if isinstance(val, str):
-                        self.__dict__[key] = f"{val} (NEW)"
-                    else:
-                        self.__dict__[key] = val
-            else:
-                if isinstance(val, str):
-                    self.__dict__[key] = f"{val} (NEW)"
-                else:
                     self.__dict__[key] = val
+            else:
+                self.__dict__[key] = val
         return updated
