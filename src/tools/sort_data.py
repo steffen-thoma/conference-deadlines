@@ -69,7 +69,7 @@ def sort_data(yaml_path: Path, overwrite):
                 else datetime.datetime.utcnow()
             )
             timezone = (
-                (conf.timezone if conf.timezone is not None else default_timezone)
+                (conf.timezone if conf.timezone != "" else default_timezone)
                 .replace("PDT", "UTC-7")
                 .replace("UTC+", "Etc/GMT-")
                 .replace("UTC-", "Etc/GMT+")
