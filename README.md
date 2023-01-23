@@ -68,12 +68,6 @@ To add or update a deadline:
 
 To test/develop the site locally with Docker:
 
-- Build
-
-  ```shell
-  docker build -t jekyll-cd .
-  ```
-
 - Run
   ```shell
   docker run --mount type=bind,source=${PWD},target=/srv/jekyll -p 4000:4000 -it --rm --name conference-deadlines jekyll/jekyll:3.8 jekyll serve
@@ -81,9 +75,11 @@ To test/develop the site locally with Docker:
 
 ## License
 
-[AI Deadlines](https://github.com/abhshkdz/ai-deadlines): [MIT][1]
-
-[IcoMoon Icons](https://icomoon.io/#icons-icomoon): [GPL](http://www.gnu.org/licenses/gpl.html) / [CC BY4.0](http://creativecommons.org/licenses/by/4.0/)
+Unless otherwise stated, this work is licensed under the [MIT](LICENSE) license
+- Based on [AI Deadlines](https://github.com/abhshkdz/ai-deadlines): [MIT][1]
+- Using [IcoMoon Icons](https://icomoon.io/#icons-icomoon): [GPL](http://www.gnu.org/licenses/gpl.html) / [CC BY4.0](http://creativecommons.org/licenses/by/4.0/)
+- Using Deadline information from [WikiCFP](http://wikicfp.com/cfp/) with [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), thus all information in [_data](_data) falls under this license
+- Using ranking information from [CORE](http://portal.core.edu.au/conf-ranks/)
 
 [1]: https://abhshkdz.mit-license.org/
 [2]: http://aideadlin.es/

@@ -1,0 +1,1 @@
+Partially uses deadline information from [WikiCFP](http://wikicfp.com/cfp/) which is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), thus all information in this folder falls under this license.
