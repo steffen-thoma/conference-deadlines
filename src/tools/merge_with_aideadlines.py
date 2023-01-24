@@ -4,7 +4,7 @@ from src.config import csv_path_master_data, yaml_path_conferences
 from src.io import load_ai_deadlines_data, load_csv, load_yaml, save_yaml
 from src.scraping.utils import get_date_format_from_start_and_end
 
-time_format = "%Y/%m/%d %H:%M"
+time_format = "%Y-%m-%d %H:%M"
 
 
 def update_data_with_ai_deadlines_data():
