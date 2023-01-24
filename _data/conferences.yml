@@ -1348,11 +1348,16 @@
   full_name: International Conference on Cyber-Physical Systems
   link: http://iccps.acm.org/2023/
   deadline: 2022-07-01 23:59
+  abstract_deadline: 2022-10-24 23:59
   timezone: UTC-12
   place: Tokyo, Japan
   date: April 22-23, 2023
+  start: '2023-05-09'
+  end: '2023-05-12'
   hindex: 26
   sub: AD
+  note: 'Abstract deadline: October 24, 2022'
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=168136&copyownerid=176783
 - title: ICMLA
   year: 2022
   id: icmla22
@@ -1518,11 +1523,15 @@
   full_name: Conference on Secure and Trustworthy Machine Learning
   link: https://satml.org/call-for-papers/
   deadline: 2022-09-01 23:59
+  abstract_deadline: 2022-08-22 23:59
   timezone: UTC-12
   place: ?, ?
   date: February 8-10, 2023
+  start: '2023-02-08'
+  end: '2023-02-10'
   sub: ML
   note: Mandatory abstract deadline on August 22, 2022
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=161138&copyownerid=84047
 - title: WCNC
   year: 2023
   id: wcnc23
@@ -1532,8 +1541,13 @@
   timezone: UTC-12
   place: Glasgow, United Kingdom
   date: March 26-29, 2023
+  start: '2023-03-26'
+  end: '2023-03-29'
   hindex: 24
   sub: AD
+  ranking: B
+  ranking_link: http://portal.core.edu.au/conf-ranks/760
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167536&copyownerid=176513
 - title: UV
   year: 2022
   id: uv22
@@ -1569,7 +1583,10 @@
   timezone: UTC-12
   place: Abu Dhabi, United Arab Emirates
   date: February 10-12, 2023
+  start: '2023-02-10'
+  end: '2023-02-12'
   sub: RO
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=161119&copyownerid=13881
 - title: ICLR
   year: 2023
   id: iclr23
@@ -1802,8 +1819,11 @@
   timezone: UTC+1
   place: Portland, USA
   date: April 19-22, 2023
+  start: '2023-04-19'
+  end: '2023-04-22'
   hindex: 10
   sub: AD
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169640&copyownerid=73906
 - title: ICSA
   year: 2023
   id: icsa23
@@ -1841,8 +1861,13 @@
   timezone: UTC-12
   place: Prague, Czech Republic
   date: April 26-28, 2023
+  start: '2023-04-26'
+  end: '2023-04-28'
   hindex: 11
   sub: AD
+  ranking: C
+  ranking_link: http://portal.core.edu.au/conf-ranks/2299
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167117&copyownerid=45217
 - title: ICAPS
   year: 2023
   id: icaps23
@@ -1870,8 +1895,13 @@
   timezone: UTC-12
   place: Florence, Italy
   date: June 18-21, 2023
+  start: '2023-06-18'
+  end: '2023-06-21'
   hindex: 42
   sub: AD
+  ranking: B
+  ranking_link: http://portal.core.edu.au/conf-ranks/757
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167537&copyownerid=176513
 - title: ICCRE
   year: 2023
   id: iccre23
@@ -1881,8 +1911,11 @@
   timezone: UTC-12
   place: Niigata, Japan
   date: April 14-16, 2023
+  start: '2023-04-14'
+  end: '2023-04-17'
   hindex: 11
   sub: RO
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=165917&copyownerid=13881
 - title: IJCAI
   year: 2022
   id: ijcai22
@@ -1907,8 +1940,11 @@
   timezone: UTC-12
   place: Beijing, China
   date: April 21-23, 2023
+  start: '2023-04-21'
+  end: '2023-04-23'
   hindex: 19
   sub: RO
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=166272&copyownerid=13881
 - title: IJCAI
   year: 2023
   id: ijcai23
@@ -1955,8 +1991,11 @@
   timezone: UTC-12
   place: Wuhan, China
   date: June 16-18, 2022
+  start: '2023-06-16'
+  end: '2023-06-18'
   hindex: 13
   sub: RO
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167728&copyownerid=13881
 - title: ISS
   year: 2023
   id: iss23
@@ -1996,6 +2035,33 @@
   ranking_link: http://portal.core.edu.au/conf-ranks/29
   note: Mandatory abstract deadline on January 24, 2023. More info <a href='https://sigir.org/sigir2023/call-for-full-papers/'>here</a>.
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170048&copyownerid=178013
+- title: SIGGRAPH
+  year: 2023
+  id: siggraph23
+  full_name: Special Interest Group on Computer Graphics and Interactive Techniques
+  link: https://s2023.siggraph.org/
+  deadline: 2023-01-24 23:59
+  timezone: UTC
+  place: Los Angeles, USA
+  date: August 6-10, 2023
+  hindex: 19
+  sub: CV
+- title: ESEC-FSE
+  year: 2023
+  id: esec-fse23
+  full_name: Joint European Software Engineering Conference and Symposium on the Foundations
+    of Software Engineering
+  link: https://2023.esec-fse.org/
+  deadline: 2023-01-26 23:59
+  abstract_deadline: 2023-01-26 23:59
+  timezone: UTC-12
+  place: San Francisco, USA
+  date: November 11-17, 2023
+  start: '2023-11-11'
+  end: '2023-11-17'
+  sub: AD
+  note: 'Abstract deadline: January 26, 2023'
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=166667&copyownerid=71926
 - title: ICML
   year: 2023
   id: icml23
@@ -2013,17 +2079,6 @@
   ranking_link: http://portal.core.edu.au/conf-ranks/1121
   note: Mandatory abstract deadline on Jan 20, 2022.
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167719&copyownerid=175225
-- title: ESEC-FSE
-  year: 2023
-  id: esec-fse23
-  full_name: Joint European Software Engineering Conference and Symposium on the Foundations
-    of Software Engineering
-  link: https://2023.esec-fse.org/
-  deadline: 2023-01-26 23:59
-  timezone: UTC-12
-  place: San Francisco, USA
-  date: November 11-17, 2023
-  sub: AD
 - title: PRIS
   year: 2023
   id: pris23
@@ -2093,8 +2148,11 @@
   timezone: UTC-12
   place: Anchorage, USA
   date: July 04-07, 2023
+  start: '2023-06-04'
+  end: '2023-06-07'
   hindex: 52
   sub: AD
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169828&copyownerid=105393
 - title: UR
   year: 2023
   id: ur23
@@ -2167,8 +2225,13 @@
   timezone: UTC-12
   place: Toulouse, France
   date: September 19-22, 2023
+  start: '2023-09-20'
+  end: '2023-09-22'
   hindex: 23
   sub: ML
+  ranking: B
+  ranking_link: http://portal.core.edu.au/conf-ranks/961
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170692&copyownerid=69805
 - title: ICoIV
   year: 2023
   id: icoiv23
@@ -2190,6 +2253,32 @@
   date: July 12-15, 2023
   hindex: 63
   sub: ML
+- title: FUSION
+  year: 2023
+  id: fusion23
+  full_name: International Conference on Information Fusion
+  link: https://fusion2023.org/
+  deadline: 2023-02-15 23:59
+  timezone: UTC-12
+  place: Charleston, USA
+  date: June 27-30, 2023
+  start: '2023-06-27'
+  end: '2023-06-30'
+  hindex: 27
+  sub: CV
+  ranking: C
+  ranking_link: http://portal.core.edu.au/conf-ranks/1072
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169875&copyownerid=17153
+- title: SR4AD
+  year: 2023
+  id: sr4ad23
+  full_name: Scene Representations For Autonomous Driving
+  link: http://opendrivelab.com/sr4ad/iclr23
+  deadline: 2023-02-15 23:59
+  timezone: UTC-12
+  place: Rwanda, Africa
+  date: May 5, 2023
+  sub: AD
 - title: ICIP
   year: 2023
   id: icip23
@@ -2206,27 +2295,6 @@
   ranking: B
   ranking_link: http://portal.core.edu.au/conf-ranks/654
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167720&copyownerid=175225
-- title: FUSION
-  year: 2023
-  id: fusion23
-  full_name: International Conference on Information Fusion
-  link: https://fusion2023.org/
-  deadline: 2023-02-15 23:59
-  timezone: UTC-12
-  place: Charleston, USA
-  date: June 27-30, 2023
-  hindex: 27
-  sub: CV
-- title: SR4AD
-  year: 2023
-  id: sr4ad23
-  full_name: Scene Representations For Autonomous Driving
-  link: http://opendrivelab.com/sr4ad/iclr23
-  deadline: 2023-02-15 23:59
-  timezone: UTC-12
-  place: Rwanda, Africa
-  date: May 5, 2023
-  sub: AD
 - title: UAI
   year: 2023
   id: uai23
@@ -2358,7 +2426,10 @@
   timezone: UTC-12
   place: Santa Clara, USA
   date: June 5-6, 2023
+  start: '2023-06-07'
+  end: '2023-06-08'
   sub: ML
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=168898&copyownerid=13149
 - title: AutoML-Conf
   year: 2023
   id: automl-conf23
