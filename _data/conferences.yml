@@ -1123,21 +1123,6 @@
   end: '2022-10-17'
   hindex: 64
   sub: NLP
-- title: CIKM
-  year: 2022
-  id: cikm22
-  full_name: Conference on Information and Knowledge Management
-  link: https://www.cikm2022.org/
-  deadline: 2022-05-19 23:59
-  abstract_deadline: 2022-05-12 23:59
-  timezone: UTC-12
-  place: Atlanta, Georgia, USA
-  date: October 17 - 22, 2022
-  start: '2022-10-17'
-  end: '2022-10-22'
-  hindex: 48
-  sub: DM
-  note: Mandatory abstract deadline on May 12, 2022
 - title: NeurIPS
   year: 2022
   id: neurips22
@@ -1154,10 +1139,25 @@
   sub: ML
   ranking: A
   note: Mandatory abstract deadline on May 16, 2022
+- title: CIKM
+  year: 2022
+  id: cikm22
+  full_name: Conference on Information and Knowledge Management
+  link: https://www.cikm2022.org/
+  deadline: 2022-05-19 23:59
+  abstract_deadline: 2022-05-12 23:59
+  timezone: UTC-12
+  place: Atlanta, Georgia, USA
+  date: October 17 - 22, 2022
+  start: '2022-10-17'
+  end: '2022-10-22'
+  hindex: 48
+  sub: DM
+  note: Mandatory abstract deadline on May 12, 2022
 - title: SIGGRAPHASIAConf
   year: 2022
   id: siggraphasia22
-  full_name: SIGGRAPH ASIA
+  full_name: SIGGRAPH ASIA 2022
   link: https://sa2022.siggraph.org/
   deadline: 2022-05-20 23:59
   abstract_deadline: 2022-05-19 23:59
@@ -1467,7 +1467,7 @@
 - title: evoMUSART
   year: 2023
   id: evomusart23
-  full_name: International Conference on Artificial Intelligence in Music, Sound,
+  full_name: 12th International Conference on Artificial Intelligence in Music, Sound,
     Art and Design
   link: https://www.evostar.org/2023/evomusart/
   deadline: 2022-11-01 23:59
@@ -1538,7 +1538,7 @@
   start: '2023-07-08'
   end: '2022-07-13'
   hindex: 27
-  sub: APL
+  sub: AP
   ranking: A*
   ranking_link: http://portal.core.edu.au/conf-ranks/919
   note: Mandatory abstract deadline on November 25, 2022. More info <a href='https://icaps23.icaps-conference.org/'>here</a>.
@@ -1640,6 +1640,19 @@
   end: '2023-07-07'
   sub: RO
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170662&copyownerid=96131
+- title: KDD
+  year: 2023
+  id: kdd23
+  full_name: Knowledge Discovery and Data Mining
+  link: https://kdd.org/kdd2023/
+  deadline: 2023-02-02 23:59
+  timezone: UTC-12
+  place: Long Beach, California, USA
+  date: August 6 - 10, 2023
+  start: '2023-08-06'
+  end: '2023-08-10'
+  hindex: 114
+  sub: DM
 - title: CHIL
   year: 2023
   id: chil23
@@ -1675,10 +1688,12 @@
   full_name: International Conference on Image Processing
   link: https://2023.ieeeicip.org/
   deadline: 2023-02-15 23:59
+  timezone: America/Los_Angeles
   place: Kuala Lumpur, Malaysia
-  date: October 9 - 12, 2023
-  start: '2023-10-09'
-  end: '2023-10-12'
+  date: October 8 - 11, 2023
+  start: '2023-10-08'
+  end: '2023-10-11'
+  hindex: 60
   sub: CV
   ranking: B
   ranking_link: http://portal.core.edu.au/conf-ranks/654
@@ -1698,6 +1713,19 @@
   ranking: A
   ranking_link: http://portal.core.edu.au/conf-ranks/346
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170647&copyownerid=169708
+- title: InterSpeech
+  year: 2023
+  id: interspeech23
+  full_name: Conference of the International Speech Communication Association
+  link: http://www.interspeech2023.org/
+  deadline: 2023-03-01 23:59
+  timezone: UTC-12
+  place: Dublin, Ireland
+  date: August 30 - September 3, 2023
+  start: '2023-08-30'
+  end: '2023-09-03'
+  hindex: 100
+  sub: SP
 - title: IROS
   year: 2023
   id: iros23
@@ -1726,6 +1754,16 @@
   end: '2023-08-29'
   sub: APL
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=165216&copyownerid=164924
+- title: CoLLAs
+  year: 2023
+  id: collas23
+  link: https://lifelong-ml.cc
+  deadline: 2023-03-06 23:59
+  abstract_deadline: 2023-03-03 23:59
+  timezone: UTC-12
+  place: Montreal, Canada
+  date: August, 2023
+  sub: ML
 - title: ICPRS
   year: 2023
   id: icprs23
@@ -1755,6 +1793,30 @@
   ranking_link: http://portal.core.edu.au/conf-ranks/638
   note: Supplementary deadline on Mar 15, 2023. More info <a href='http://iccv2023.thecvf.com/home'>here</a>.
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169651&copyownerid=176401
+- title: MICCAI
+  year: 2023
+  id: miccai2023
+  link: https://conferences.miccai.org/2023/en/
+  deadline: 2023-03-09 23:59
+  timezone: America/Los_Angeles
+  place: Vancouver, Canada
+  date: October 8 - 12, 2023
+  start: '2023-10-08'
+  end: '2023-10-12'
+  hindex: 78
+  sub: CV
+  note: More info <a href='https://conferences.miccai.org/2023/'>here</a>.
+- title: AutoML-Conf
+  year: 2023
+  id: automl-conf23
+  link: https://2023.automl.cc
+  deadline: 2023-03-23 23:59
+  timezone: UTC-12
+  place: Potsdam/Berlin, Germany
+  date: September 12 - 15, 2023
+  start: '2023-09-12'
+  end: '2023-09-15'
+  hindex: 0
 - title: ETFA
   year: 2023
   id: etfa23
