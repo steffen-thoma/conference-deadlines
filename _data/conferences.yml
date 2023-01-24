@@ -1110,7 +1110,7 @@
   start: '2022-11-07'
   end: '2022-11-11'
   hindex: 34
-  sub: CV
+  sub: RO,CV
 - title: COLING
   year: 2022
   id: coling22
@@ -1261,14 +1261,14 @@
   year: 2023
   id: wacv23
   full_name: Winter Conference on Applications of Computer Vision
-  link: http://wacv2023.thecvf.com/
+  link: https://wacv2023.thecvf.com/
   deadline: 2022-07-13 23:59
   timezone: America/Los_Angeles
   place: Waikoloa, Hawaii, USA
   date: January 3 - 7, 2023
   start: '2023-01-03'
   end: '2023-01-07'
-  hindex: 54
+  hindex: 62
   sub: CV
   note: Second round submission deadline on Aug. 29th 2022
 - title: AACL-IJCNLP
@@ -1294,7 +1294,7 @@
   date: November 21 - 24, 2022
   start: '2022-11-21'
   end: '2022-11-24'
-  hindex: 75
+  hindex: 66
   sub: CV
 - title: WSDM
   year: 2023
@@ -1584,7 +1584,7 @@
   year: 2023
   id: icml23
   full_name: International Conference on Machine Learning
-  link: https://icml.cc/
+  link: https://icml.cc/Conferences/2023
   deadline: 2023-01-26 23:59
   timezone: America/Los_Angeles
   place: Hawai'i, USA
@@ -1596,6 +1596,7 @@
   ranking: As
   ranking_link: http://portal.core.edu.au/conf-ranks/1121
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167719&copyownerid=175225
+  note: Mandatory abstract deadline on Jan 20, 2022.
 - title: PRIS
   year: 2023
   id: pris23
@@ -1631,7 +1632,7 @@
 - title: IAS
   year: 2023
   id: ias23
-  full_name: 'The 18th international conference on Intelligent Autonomous System 2023 '
+  full_name: Intelligent Autonomous Systems
   link: https://ias-18.org/
   deadline: 2023-01-31 23:59
   place: Suwon, Korea
@@ -1713,6 +1714,7 @@
   ranking: A
   ranking_link: http://portal.core.edu.au/conf-ranks/346
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170647&copyownerid=169708
+  hindex: 45
 - title: InterSpeech
   year: 2023
   id: interspeech23
