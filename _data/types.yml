@@ -23,3 +23,6 @@
 - name: Applications
   sub: APL
   color: "#be0aff"
+- name: Autonomous Driving
+  sub: AD
+  color: "#be0aff"

@@ -7,11 +7,13 @@ import requests
 import yaml
 
 from src.scraping.models import ConferenceDeadline
-from src.scraping.utils import get_datetime
 
 
-def load_ai_deadlines_data():
-    url = "https://raw.githubusercontent.com/paperswithcode/ai-deadlines/gh-pages/_data/conferences.yml"
+def load_ai_deadlines_data(site="pwc"):
+    url = {
+        "pwc": "https://raw.githubusercontent.com/paperswithcode/ai-deadlines/gh-pages/_data/conferences.yml",
+        "ad": "https://raw.githubusercontent.com/daniel-bogdoll/ad-deadlines/gh-pages/_data/conferences.yml",
+    }[site]
     r = requests.get(url)
     conferences = yaml.safe_load(r.content)
     conferences = {conf["id"]: conf for conf in conferences}
