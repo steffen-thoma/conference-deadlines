@@ -145,7 +145,8 @@
                 <span title="Click to only show {{sub}} conferences" data-sub="{{sub}}" class="conf-sub {{sub}}-tag"></span>
                 {% endfor %}
                 {% if conf.ranking %}
-                <span title="Click to only show {{conf.ranking}} conferences" class="conf-ranking" data-ranking="{{conf.ranking}}">{{conf.ranking}}</span>
+                {% assign ranking_ = conf.ranking | replace: "As", "A*" %}
+                <span title="Click to only show {{ranking_}} conferences" class="conf-ranking" data-ranking="{{conf.ranking}}">{{ranking_}}</span>
                 {% endif %}
                 {% if conf.hindex %}
                 <span title="H5 Index" class="conf-h5">{{conf.hindex}}</span>
