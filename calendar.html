@@ -58,8 +58,8 @@ permalink: /calendar/
                   <select id="ranking-select" name="ranking-select" multiple="multiple"
                     style="display: none;">
                     {% for ranking in site.data.rankings %}
-                    <option value="{{ranking.ranking}}" id="ranking-{{ranking.ranking}}-checkbox">
-                            {{ranking.ranking}} Ranking
+                    <option value="{{ranking.ranking}}" label="{{ranking.text}}" id="ranking-{{ranking.ranking}}-checkbox">
+                            {{ranking.text}} Ranking
                     </option>
                     {% endfor %}
                   </select>

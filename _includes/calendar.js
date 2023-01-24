@@ -26,7 +26,7 @@
                 badges_html += '<span class="conf-sub conf-badge-small">' + sub + '</span>'
               }
               if (e.events[i].ranking != "" && e.events[i].ranking != "NA") {
-                badges_html += '<span class="conf-ranking conf-badge-small">' + e.events[i].ranking + '</span>'
+                badges_html += '<span class="conf-ranking conf-badge-small">' + e.events[i].ranking.replace('As', 'A*') + '</span>'
               }
 
               if (e.events[i].hindex != "") {

@@ -130,7 +130,8 @@ permalink:  /conference/
               if ("{{conf.ranking}}" == "") {
                 $('#conf-ranking').hide();
               } else {
-                $('#conf-ranking').text("{{conf.ranking}}");
+                {% assign ranking_ = conf.ranking | replace: "As", "A*" %}
+                $('#conf-ranking').text("{{ranking_}}");
               }
               if ("{{conf.wikicfp}}" == "") {
                 $('#conf-wikicfp').hide();

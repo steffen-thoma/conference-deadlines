@@ -103,7 +103,7 @@ $("#ranking-select").multiselect({
       var labels = [];
       options.each(function () {
         if ($(this).attr("value") !== undefined) {
-          labels.push($(this).attr("value"));
+          labels.push($(this).attr("label"));
         } else {
           labels.push($(this).html());
         }

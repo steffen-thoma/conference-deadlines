@@ -113,6 +113,8 @@ class ConferenceDeadline:
             if self.ranking not in ["", "N/A", "NA"]:
                 print(f"Ranking of {self.id} set to: {self.ranking}")
             self.ranking = ""
+        elif self.ranking == "A*":
+            self.ranking = "As"
         return self
 
     def as_dict(self) -> Dict:
