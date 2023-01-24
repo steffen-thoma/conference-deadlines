@@ -11,6 +11,7 @@
   paperslink: http://algorithmiclearningtheory.org/alt2020/accepted-papers/
   hindex: 15
   sub: ML
+  ranking: N/A
 - title: HRI
   year: 2020
   id: hri20
@@ -24,6 +25,7 @@
   paperslink: https://dl.acm.org/doi/proceedings/10.1145/3319502
   hindex: 40
   sub: RO
+  ranking: N/A
 - title: ICMR
   year: 2020
   id: icmr20
@@ -37,6 +39,7 @@
   paperslink: http://icmr2020.org/ICMR2020-detailed-schedule-FINAL.pdf
   hindex: 33
   sub: CV
+  ranking: N/A
 - title: COLT
   year: 2020
   id: colt20
@@ -50,6 +53,7 @@
   paperslink: http://proceedings.mlr.press/v125/
   hindex: 48
   sub: ML
+  ranking: N/A
 - title: ICCC
   year: 2020
   id: iccc20
@@ -63,6 +67,7 @@
   paperslink: http://computationalcreativity.net/iccc20/papers/ICCC20_Proceedings.pdf
   hindex: 22
   sub: ML
+  ranking: N/A
 - title: ISMIR
   year: 2020
   id: ismir20
@@ -77,6 +82,7 @@
   paperslink: https://program.ismir2020.net/papers.html?filter=keywords
   hindex: 32
   sub: SP
+  ranking: N/A
   note: Mandatory abstract deadline on Apr 10, 2020. More info <a href='https://ismir.github.io/ISMIR2020/cfp/'>here</a>.
 - title: AACL-IJCNLP
   year: 2020
@@ -92,6 +98,7 @@
   pwclink: https://paperswithcode.com/conference/asian-chapter-of-the-association-for
   hindex: -1
   sub: NLP
+  ranking: N/A
 - title: ACCV
   year: 2020
   id: accv20
@@ -105,6 +112,7 @@
   paperslink: https://accv2020.github.io/programs/papers/index.html
   hindex: 38
   sub: CV
+  ranking: N/A
 - title: ICPR
   year: 2020
   id: icpr20
@@ -119,6 +127,7 @@
   paperslink: https://www.micc.unifi.it/icpr2020/index.php/papers-and-authors/
   hindex: 38
   sub: ML
+  ranking: N/A
 - title: CoNLL
   year: 2020
   id: conll2020
@@ -132,6 +141,7 @@
   paperslink: https://aclanthology.org/events/conll-2020/
   hindex: 34
   sub: NLP
+  ranking: N/A
 - title: 3DV
   year: 2020
   id: threedv20
@@ -145,6 +155,7 @@
   paperslink: http://3dv2020.dgcv.nii.ac.jp/conferenceprogram.html
   hindex: 29
   sub: CV
+  ranking: N/A
 - title: WMT
   year: 2020
   id: wmt20
@@ -158,6 +169,7 @@
   paperslink: http://www.statmt.org/wmt20/papers.html
   hindex: 27
   sub: NLP
+  ranking: N/A
 - title: EACL
   year: 2021
   id: eacl21
@@ -173,6 +185,7 @@
   pwclink: https://paperswithcode.com/conference/eacl-2021-2
   hindex: 36
   sub: NLP
+  ranking: N/A
 - title: AAMAS
   year: 2021
   id: aamas21
@@ -186,6 +199,7 @@
   paperslink: https://dl.acm.org/doi/proceedings/10.5555/3463952
   hindex: 25
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Oct 02, 2020. More info <a href='https://aamas2021.soton.ac.uk/calls/papers/'>here</a>.
 - title: SDM
   year: 2021
@@ -201,6 +215,7 @@
   paperslink: https://epubs.siam.org/doi/book/10.1137/1.9781611976700
   hindex: 33
   sub: DM
+  ranking: N/A
 - title: AISTATS
   year: 2021
   id: aistats21
@@ -215,6 +230,7 @@
   paperslink: http://proceedings.mlr.press/v130/
   hindex: 52
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Oct 8, 2020. More info <a href='http://www.aistats.org/aistats2021/cfp.html'>here</a>.
 - title: ICME
   year: 2021
@@ -230,6 +246,7 @@
   paperslink: https://2021.ieeeicme.org/conf_oral
   hindex: 30
   sub: CV
+  ranking: N/A
 - title: ICAPS
   year: 2021
   id: icaps21
@@ -242,6 +259,7 @@
   date: June 7 - 12, 2021
   hindex: 28
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Dec 11, 2020. More info <a href='https://icaps21.icaps-conference.org/'>here</a>.
 - title: ICIP
   year: 2021
@@ -257,6 +275,7 @@
   paperslink: https://2021.ieeeicip.org/Papers/TechnicalProgram_MS.asp
   hindex: 52
   sub: CV
+  ranking: N/A
 - title: CHIL
   year: 2021
   id: chil21
@@ -269,6 +288,7 @@
   date: April 8 - 10, 2021
   hindex: -1
   sub: ML
+  ranking: N/A
   note: Recommended abstract deadline on Jan 10, 2021. More info <a href='https://www.chilconference.org'>here</a>.
 - title: SIGGRAPH
   year: 2021
@@ -285,6 +305,7 @@
   paperslink: https://s2021.siggraph.org/full-program/
   hindex: 19
   sub: CV
+  ranking: N/A
   note: Mandatory abstract deadline on Jan 27, 2021. More info <a href='https://s2021.siggraph.org/program/technical-papers/'>here</a>.
 - title: ICML
   year: 2021
@@ -298,6 +319,7 @@
   date: July 18 - 24, 2021
   hindex: 135
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Jan 28, 2021. More info <a href='https://icml.cc/Conferences/2021/'>here</a>.
 - title: KDD
   year: 2021
@@ -310,6 +332,7 @@
   date: August 14 - 18, 2021
   hindex: 30
   sub: DM
+  ranking: N/A
 - title: SIGIR
   year: 2021
   id: sigir21
@@ -322,6 +345,7 @@
   date: July 11 - 15, 2021
   hindex: 57
   sub: DM
+  ranking: N/A
 - title: MIDL
   year: 2021
   id: midl2021
@@ -337,6 +361,7 @@
   paperslink: https://2021.midl.io/program.html
   hindex: -1
   sub: CV
+  ranking: N/A
   note: Abstract deadline on Feb 10, 2021. More info <a href='https://2021.midl.io/dates.html'>here</a>.
 - title: UAI
   year: 2021
@@ -352,6 +377,7 @@
   paperslink: https://www.auai.org/uai2021/accepted_papers
   hindex: 33
   sub: ML
+  ranking: N/A
 - title: RSS
   year: 2021
   id: rss21
@@ -366,6 +392,7 @@
   paperslink: https://roboticsconference.org/program/papers/
   hindex: 47
   sub: RO
+  ranking: N/A
 - title: IROS
   year: 2021
   id: iros21
@@ -379,6 +406,7 @@
   end: '2021-10-01'
   hindex: 58
   sub: RO
+  ranking: N/A
 - title: MICCAI
   year: 2021
   id: miccai2021
@@ -393,6 +421,7 @@
   paperslink: https://www.miccai2021.org/en/TENTATIVE-SCHEDULE.html
   hindex: 46
   sub: CV
+  ranking: N/A
   note: Intent to submit deadline on Feb 19, 2021. More info <a href='https://www.miccai2021.org/'>here</a>.
 - title: ICCV
   year: 2021
@@ -440,6 +469,7 @@
   paperslink: https://www.isca-speech.org/archive/interspeech_2021/index.html
   hindex: 81
   sub: SP
+  ranking: N/A
 - title: FG
   year: 2021
   id: fg2021
@@ -453,6 +483,7 @@
   end: '2021-12-18'
   hindex: -1
   sub: CV
+  ranking: N/A
   note: the 2nd round submission deadline is July 15, 2021.
 - title: MM
   year: 2021
@@ -465,6 +496,7 @@
   date: October 20 - 24, 2021
   hindex: 58
   sub: CV
+  ranking: N/A
 - title: RecSys
   year: 2021
   id: recsys21
@@ -478,6 +510,7 @@
   paperslink: https://recsys.acm.org/recsys21/accepted-contributions/#content-tab-1-0-tab
   hindex: 45
   sub: DM
+  ranking: N/A
   note: Mandatory abstract deadline on April 27, 2020. More info <a href='https://recsys.acm.org/recsys21/dates/'>here</a>.
 - title: EMNLP
   year: 2021
@@ -493,6 +526,7 @@
   end: '2021-11-11'
   hindex: 112
   sub: NLP
+  ranking: N/A
 - title: CIKM
   year: 2021
   id: cikm21
@@ -507,6 +541,7 @@
   end: '2021-11-05'
   hindex: 48
   sub: DM
+  ranking: N/A
 - title: ICMI
   year: 2021
   id: icmi2021
@@ -518,6 +553,7 @@
   date: October 18 - 22, 2021
   hindex: -1
   sub: CV
+  ranking: N/A
 - title: NeurIPS
   year: 2021
   id: neurips21
@@ -562,6 +598,7 @@
   end: '2021-12-10'
   hindex: -1
   sub: DM
+  ranking: N/A
 - title: CoRL
   year: 2021
   id: corl21
@@ -574,6 +611,7 @@
   start: '2021-11-08'
   end: '2021-11-11'
   sub: RO
+  ranking: N/A
 - title: AKBC
   year: 2021
   id: akbc21
@@ -587,6 +625,7 @@
   end: '2021-10-07'
   paperslink: https://openreview.net/group?id=AKBC.ws/2021/Conference#all-submissions
   sub: NLP
+  ranking: N/A
 - title: GCPR
   year: 2021
   id: gcpr21
@@ -596,6 +635,7 @@
   timezone: Europe/Berlin
   place: TBD
   sub: ML
+  ranking: N/A
 - title: ACML
   year: 2021
   id: acml21
@@ -609,6 +649,7 @@
   end: '2021-11-19'
   hindex: 17
   sub: ML
+  ranking: N/A
 - title: BMVC
   year: 2021
   id: bmvc21
@@ -621,6 +662,7 @@
   date: November 22 - 25, 2021
   hindex: 57
   sub: CV
+  ranking: N/A
   note: Mandatory abstract deadline on June 18, 2021. More info <a href='https://www.bmvc2021.com/dates/'>here</a>.
 - title: WSDM
   year: 2022
@@ -635,6 +677,7 @@
   end: '2022-02-25'
   hindex: 54
   sub: DM
+  ranking: N/A
 - title: AAAI
   year: 2022
   id: aaai22
@@ -649,6 +692,7 @@
   end: '2022-03-01'
   hindex: 95
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on August 30, 2021
 - title: ICRA
   year: 2022
@@ -661,6 +705,7 @@
   date: May 23 - 27, 2022
   hindex: 94
   sub: RO
+  ranking: N/A
 - title: ICLR
   year: 2022
   id: iclr22
@@ -688,6 +733,7 @@
   date: May 22 - 27, 2022
   hindex: 80
   sub: SP
+  ranking: N/A
 - title: AAMAS
   year: 2022
   id: aamas22
@@ -700,6 +746,7 @@
   date: May 11 - 13, 2022
   hindex: 25
   sub: ML
+  ranking: N/A
 - title: AISTATS
   year: 2022
   id: aistats22
@@ -713,6 +760,7 @@
   end: '2022-04-01'
   hindex: 57
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Oct 8, 2021. More info <a href='http://www.aistats.org/aistats2022/cfp.html'>here</a>.
 - title: ACL
   year: 2022
@@ -727,6 +775,7 @@
   end: '2022-05-27'
   hindex: 157
   sub: NLP
+  ranking: N/A
 - title: CVPR
   year: 2022
   id: cvpr22
@@ -750,6 +799,7 @@
   start: '2022-06-23'
   end: '2022-06-24'
   sub: ML
+  ranking: N/A
 - title: ICME
   year: 2022
   id: icme22
@@ -761,6 +811,7 @@
   date: July 18 - 22, 2022
   hindex: 30
   sub: CV
+  ranking: N/A
 - title: ICAPS
   year: 2022
   id: icaps22
@@ -775,6 +826,7 @@
   end: '2022-06-24'
   hindex: 27
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Dec 10, 2021. More info <a href='http://icaps22.icaps-conference.org/'>here</a>.
 - title: MIDL
   year: 2022
@@ -787,6 +839,7 @@
   date: July 6 - 8, 2022
   hindex: -1
   sub: CV
+  ranking: N/A
 - title: LREC
   year: 2022
   id: lrec22
@@ -800,6 +853,7 @@
   end: '2022-06-25'
   hindex: 38
   sub: NLP
+  ranking: N/A
 - title: FAccT
   year: 2022
   id: facct22
@@ -813,6 +867,7 @@
   end: '2022-06-24'
   hindex: 44
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Dec 14, 2021. More info <a href='https://facctconference.org/2022/cfp.html'>here</a>.
 - title: CHIL
   year: 2022
@@ -826,6 +881,7 @@
   paperslink: https://www.chilconference.org/2021/proceedings.html
   hindex: -1
   sub: ML
+  ranking: N/A
   note: Recommended abstract deadline on Jan 10, 2021. More info <a href='https://www.chilconference.org'>here</a>.
 - title: IJCAI-ECAI
   year: 2022
@@ -854,6 +910,7 @@
   start: '2022-06-06'
   end: '2022-06-09'
   sub: DM
+  ranking: N/A
 - title: NAACL
   year: 2022
   id: naacl22
@@ -867,6 +924,7 @@
   end: '2022-07-15'
   hindex: 105
   sub: NLP
+  ranking: N/A
 - title: ICPR
   year: 2022
   id: icpr22
@@ -894,6 +952,7 @@
   end: '2022-07-23'
   hindex: 204
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Jan 20, 2022. More info <a href='https://icml.cc/Conferences/2022/'>here</a>.
 - title: SIGGRAPH
   year: 2022
@@ -909,6 +968,7 @@
   end: '2022-08-11'
   hindex: 19
   sub: CG
+  ranking: N/A
   note: Mandatory abstract deadline on Jan 26, 2022. More info <a href='https://s2022.siggraph.org/program/technical-papers/'>here</a>.
 - title: RSS
   year: 2022
@@ -923,6 +983,7 @@
   end: '2022-07-01'
   hindex: 50
   sub: RO
+  ranking: N/A
 - title: SIGIR
   year: 2022
   id: sigir22
@@ -937,6 +998,7 @@
   end: '2022-07-15'
   hindex: 66
   sub: DM
+  ranking: N/A
   note: Mandatory abstract deadline on January 21, 2022. More info <a href='https://sigir.org/sigir2022/call-for-papers/'>here</a>.
 - title: KDD
   year: 2022
@@ -951,6 +1013,7 @@
   end: '2022-08-18'
   hindex: 30
   sub: DM
+  ranking: N/A
 - title: ICIP
   year: 2022
   id: icip22
@@ -977,6 +1040,7 @@
   start: '2022-08-01'
   end: '2022-08-05'
   sub: ML
+  ranking: N/A
 - title: IROS
   year: 2022
   id: iros22
@@ -990,6 +1054,7 @@
   end: '2022-10-27'
   hindex: 73
   sub: RO
+  ranking: N/A
 - title: AutoML-Conf
   year: 2022
   id: automl-conf22
@@ -1003,6 +1068,7 @@
   end: '2022-07-27'
   hindex: 0
   sub: ML
+  ranking: N/A
   note: Conference replacing the AutoML workshops @ ICML as they were extremely successful.
     First edition.
 - title: CoLLAs
@@ -1017,6 +1083,7 @@
   start: '2022-08-29'
   end: '2022-08-31'
   sub: ML
+  ranking: N/A
 - title: ECCV
   year: 2022
   id: eccv22
@@ -1029,6 +1096,7 @@
   end: '2022-10-28'
   hindex: 197
   sub: CV
+  ranking: N/A
 - title: RO-MAN
   year: 2022
   id: ro-man22
@@ -1041,6 +1109,7 @@
   end: '2022-09-02'
   hindex: 29
   sub: RO
+  ranking: N/A
   note: Workshop and Tutorial deadline on February 7, 2022
 - title: InterSpeech
   year: 2022
@@ -1055,6 +1124,7 @@
   end: '2022-09-22'
   hindex: 100
   sub: SP
+  ranking: N/A
 - title: ECML/PKDD
   year: 2022
   id: ecmlpkdd22
@@ -1069,6 +1139,7 @@
   start: '2022-09-19'
   end: '2022-09-23'
   sub: SP
+  ranking: N/A
   note: Check the conference website for workshop and demo deadlines
 - title: MM
   year: 2022
@@ -1084,6 +1155,7 @@
   end: '2022-10-14'
   hindex: 58
   sub: CV
+  ranking: N/A
   note: Mandatory abstract deadline on March 31, 2022. More info <a href='https://2022.acmmm.org/call-for-papers/'>here</a>.
 - title: RecSys
   year: 2022
@@ -1097,6 +1169,7 @@
   date: September 18 - September 23, 2022
   hindex: 45
   sub: DM
+  ranking: N/A
   note: Mandatory abstract deadline on April 26, 2022. More info <a href='https://recsys.acm.org/recsys22/call/'>here</a>.
 - title: ICMI
   year: 2022
@@ -1111,6 +1184,7 @@
   end: '2022-11-11'
   hindex: 34
   sub: CV
+  ranking: N/A
 - title: COLING
   year: 2022
   id: coling22
@@ -1123,6 +1197,23 @@
   end: '2022-10-17'
   hindex: 64
   sub: NLP
+  ranking: N/A
+- title: CIKM
+  year: 2022
+  id: cikm22
+  full_name: Conference on Information and Knowledge Management
+  link: https://www.cikm2022.org/
+  deadline: 2022-05-19 23:59
+  abstract_deadline: 2022-05-12 23:59
+  timezone: UTC-12
+  place: Atlanta, Georgia, USA
+  date: October 17 - 22, 2022
+  start: '2022-10-17'
+  end: '2022-10-22'
+  hindex: 48
+  sub: DM
+  ranking: N/A
+  note: Mandatory abstract deadline on May 12, 2022
 - title: NeurIPS
   year: 2022
   id: neurips22
@@ -1139,21 +1230,6 @@
   sub: ML
   ranking: A
   note: Mandatory abstract deadline on May 16, 2022
-- title: CIKM
-  year: 2022
-  id: cikm22
-  full_name: Conference on Information and Knowledge Management
-  link: https://www.cikm2022.org/
-  deadline: 2022-05-19 23:59
-  abstract_deadline: 2022-05-12 23:59
-  timezone: UTC-12
-  place: Atlanta, Georgia, USA
-  date: October 17 - 22, 2022
-  start: '2022-10-17'
-  end: '2022-10-22'
-  hindex: 48
-  sub: DM
-  note: Mandatory abstract deadline on May 12, 2022
 - title: SIGGRAPHASIAConf
   year: 2022
   id: siggraphasia22
@@ -1165,6 +1241,7 @@
   place: Daegu, South Korea
   date: December, 6-9, 2022
   sub: CG
+  ranking: N/A
 - title: ISMIR
   year: 2022
   id: ismir22
@@ -1178,6 +1255,7 @@
   end: '2022-12-08'
   hindex: 32
   sub: SP
+  ranking: N/A
   note: Mandatory abstract deadline on May 13, 2022. More info <a href='https://ismir2022.ismir.net/calls/cfp/'>here</a>.
 - title: ICDM
   year: 2022
@@ -1192,6 +1270,7 @@
   end: '2022-12-03'
   hindex: 124.0
   sub: DM
+  ranking: N/A
   note: Paper submissions limited to ten (10) pages, in the IEEE 2-column format |
     <a href="https://icdm22.cse.usf.edu/key-dates.html"> Key Dates</a> | <a href="https://icdm22.cse.usf.edu/calls/Papers.html">Call
     for Papers </a>
@@ -1207,6 +1286,7 @@
   start: '2022-12-14'
   end: '2022-12-18'
   sub: RO
+  ranking: N/A
 - title: ISMIS
   year: 2022
   id: ismis22
@@ -1217,6 +1297,7 @@
   date: October, 03-05, 2022
   hindex: 9
   sub: DM
+  ranking: N/A
   note: 'Industry Session Deadline: 16 June 2022'
 - title: ACML
   year: 2022
@@ -1231,6 +1312,7 @@
   end: '2022-12-14'
   hindex: 20
   sub: ML
+  ranking: N/A
 - title: EMNLP
   year: 2022
   id: emnlp22
@@ -1245,6 +1327,7 @@
   end: '2022-12-11'
   hindex: 132
   sub: NLP
+  ranking: N/A
   note: Hybrid format with ARR and START. More info <a href='https://2022.emnlp.org/calls/papers/Overview'>here</a>.
 - title: ICMLA
   year: 2022
@@ -1270,6 +1353,7 @@
   end: '2023-01-07'
   hindex: 54
   sub: CV
+  ranking: N/A
   note: Second round submission deadline on Aug. 29th 2022
 - title: AACL-IJCNLP
   year: 2022
@@ -1283,6 +1367,7 @@
   end: '2022-11-24'
   hindex: -1
   sub: NLP
+  ranking: N/A
 - title: BMVC
   year: 2022
   id: bmvc22
@@ -1296,6 +1381,7 @@
   end: '2022-11-24'
   hindex: 75
   sub: CV
+  ranking: N/A
 - title: WSDM
   year: 2023
   id: wsdm23
@@ -1309,6 +1395,7 @@
   end: '2023-03-03'
   hindex: 54
   sub: DM
+  ranking: N/A
 - title: AAAI
   year: 2023
   id: aaai23
@@ -1323,6 +1410,7 @@
   end: '2023-02-14'
   hindex: 95
   sub: ML
+  ranking: N/A
   note: 'Abstract deadline: August 8, 2022'
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=164442&copyownerid=692
 - title: ICRA
@@ -1338,7 +1426,7 @@
   end: '2023-06-02'
   hindex: 94
   sub: RO
-  ranking: B (needs review)
+  ranking: B
   ranking_link: http://portal.core.edu.au/conf-ranks/2051
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=168621&copyownerid=167642
 - title: ICLR
@@ -1370,6 +1458,7 @@
   date: July 11 - 15, 2022
   hindex: 33
   sub: DM
+  ranking: N/A
 - title: SDM
   year: 2023
   id: sdm23
@@ -1399,6 +1488,7 @@
   end: '2022-05-04'
   hindex: 70
   sub: DM
+  ranking: N/A
   note: Mandatory abstract deadline on October 6, 2022
 - title: AISTATS
   year: 2023
@@ -1432,6 +1522,7 @@
   end: '2023-05-06'
   hindex: 62
   sub: NLP
+  ranking: N/A
   note: Hybrid format with ARR and START. Above deadlines are for START. More info
     <a href="https://2023.eacl.org/calls/papers/">here</a>.
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169340&copyownerid=170129
@@ -1448,6 +1539,7 @@
   end: '2023-06-09'
   hindex: 110
   sub: SP
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=164443&copyownerid=692
 - title: AAMAS
   year: 2023
@@ -1463,6 +1555,7 @@
   end: '2023-06-02'
   hindex: 25
   sub: ML
+  ranking: N/A
   note: Mandatory abstract deadline on Oct 21, 2022. More info <a href='https://aamas2023.soton.ac.uk/calls/call-for-papers/'>here</a>.
 - title: evoMUSART
   year: 2023
@@ -1480,6 +1573,7 @@
   paperslink: https://evomusart-index.dei.uc.pt/
   hindex: 12
   sub: CG
+  ranking: N/A
   note: part of evostar 2023
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=166206&copyownerid=31943
 - title: ICPRAM
@@ -1508,6 +1602,7 @@
   start: '2023-02-19'
   end: '2023-02-21'
   sub: CV
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=167087&copyownerid=45217
 - title: CVPR
   year: 2023
@@ -1577,6 +1672,7 @@
   end: '2023-07-14'
   hindex: 169
   sub: NLP
+  ranking: N/A
   note: Hybrid format with ARR and START. Above deadlines are for START while abstract
     deadline is 13 January 2023. Submission to ARR should before 15 December 2022.
     More info <a href="https://2023.aclweb.org/calls/main_conference/">here</a>.
@@ -1608,6 +1704,7 @@
   start: '2023-07-28'
   end: '2023-07-30'
   sub: CV,RO
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169520&copyownerid=86815
 - title: SIGIR
   year: 2023
@@ -1639,6 +1736,7 @@
   start: '2023-07-04'
   end: '2023-07-07'
   sub: RO
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170662&copyownerid=96131
 - title: KDD
   year: 2023
@@ -1653,6 +1751,7 @@
   end: '2023-08-10'
   hindex: 114
   sub: DM
+  ranking: N/A
 - title: CHIL
   year: 2023
   id: chil23
@@ -1667,6 +1766,7 @@
   paperslink: https://proceedings.mlr.press/v174/
   hindex: -1
   sub: ML
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169754&copyownerid=13149
 - title: RSS
   year: 2023
@@ -1681,6 +1781,7 @@
   end: '2023-07-14'
   hindex: 58
   sub: RO
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169204&copyownerid=164924
 - title: ICIP
   year: 2023
@@ -1726,6 +1827,7 @@
   end: '2023-09-03'
   hindex: 100
   sub: SP
+  ranking: N/A
 - title: IROS
   year: 2023
   id: iros23
@@ -1753,6 +1855,7 @@
   start: '2023-08-26'
   end: '2023-08-29'
   sub: APL
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=165216&copyownerid=164924
 - title: CoLLAs
   year: 2023
@@ -1764,6 +1867,7 @@
   place: Montreal, Canada
   date: August, 2023
   sub: ML
+  ranking: N/A
 - title: ICPRS
   year: 2023
   id: icprs23
@@ -1775,6 +1879,7 @@
   start: '2023-07-04'
   end: '2023-07-07'
   sub: CV
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169479&copyownerid=93310
 - title: ICCV
   year: 2023
@@ -1805,6 +1910,7 @@
   end: '2023-10-12'
   hindex: 78
   sub: CV
+  ranking: N/A
   note: More info <a href='https://conferences.miccai.org/2023/'>here</a>.
 - title: AutoML-Conf
   year: 2023
@@ -1817,6 +1923,7 @@
   start: '2023-09-12'
   end: '2023-09-15'
   hindex: 0
+  ranking: N/A
 - title: ETFA
   year: 2023
   id: etfa23
@@ -1828,6 +1935,7 @@
   start: '2023-09-12'
   end: '2023-09-15'
   sub: APL
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=171308&copyownerid=38122
 - title: ICANN
   year: 2023
@@ -1854,6 +1962,7 @@
   start: '2023-09-19'
   end: '2023-09-22'
   sub: ML
+  ranking: N/A
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=170830&copyownerid=178834
 - title: ICDM
   year: 2023

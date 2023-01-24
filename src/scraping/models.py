@@ -109,6 +109,10 @@ class ConferenceDeadline:
                         d = None
                         pass
                 self.__dict__[key] = d
+        if self.ranking not in ["A*", "A", "B", "C"]:
+            if self.ranking not in ["", "N/A"]:
+                print(f"Ranking of {self.id} set to: {self.ranking}")
+            self.ranking = "N/A"
         return self
 
     def as_dict(self) -> Dict:
