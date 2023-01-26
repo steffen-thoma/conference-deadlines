@@ -827,22 +827,6 @@
   hindex: -1
   sub: ML
   note: Recommended abstract deadline on Jan 10, 2021. More info <a href='https://www.chilconference.org'>here</a>.
-- title: IJCAI-ECAI
-  year: 2022
-  id: ijcai22
-  full_name: International Joint Conference on Artificial Intelligence and European
-    Conference on Artificial Intelligence
-  link: https://ijcai-22.org/
-  deadline: 2022-01-14 23:59
-  abstract_deadline: 2022-01-07 23:59
-  timezone: UTC+1
-  place: Vienna, Austria
-  date: July 23 - 29, 2022
-  start: '2022-07-23'
-  end: '2022-07-29'
-  hindex: 105
-  sub: ML
-  ranking: A
 - title: ICWSM
   year: 2022
   id: icwsm22
@@ -1154,6 +1138,21 @@
   end: '2022-10-17'
   hindex: 64
   sub: NLP
+- title: CIKM
+  year: 2022
+  id: cikm22
+  full_name: Conference on Information and Knowledge Management
+  link: https://cikm2022.org/
+  deadline: 2022-05-19 23:59
+  abstract_deadline: 2022-05-12 23:59
+  timezone: UTC-12
+  place: Atlanta, Georgia, United States
+  date: October 17 - 22, 2022
+  start: '2022-10-17'
+  end: '2022-10-22'
+  hindex: 59
+  sub: DM
+  note: 'Mandatory abstract deadline: 2022-05-12'
 - title: NeurIPS
   year: 2022
   id: neurips22
@@ -1170,21 +1169,6 @@
   sub: ML
   ranking: A
   note: Mandatory abstract deadline.
-- title: CIKM
-  year: 2022
-  id: cikm22
-  full_name: Conference on Information and Knowledge Management
-  link: https://cikm2022.org/
-  deadline: 2022-05-19 23:59
-  abstract_deadline: 2022-05-12 23:59
-  timezone: UTC-12
-  place: Atlanta, Georgia, United States
-  date: October 17 - 22, 2022
-  start: '2022-10-17'
-  end: '2022-10-22'
-  hindex: 59
-  sub: DM
-  note: 'Mandatory abstract deadline: 2022-05-12'
 - title: SIGGRAPHASIAConf
   year: 2022
   id: siggraphasia22
@@ -1369,20 +1353,6 @@
   date: December 12 - 15, 2022
   sub: ML
   ranking: C
-- title: WACV
-  year: 2023
-  id: wacv23
-  full_name: Winter Conference on Applications of Computer Vision
-  link: https://wacv2023.thecvf.com/
-  deadline: 2022-07-13 23:59
-  timezone: America/Los_Angeles
-  place: Waikoloa, Hawaii, USA
-  date: January 3 - 7, 2023
-  start: '2023-01-03'
-  end: '2023-01-07'
-  hindex: 62
-  sub: CV
-  note: Second round submission deadline on Aug. 29th 2022
 - title: AACL-IJCNLP
   year: 2022
   id: aacl22
@@ -2007,17 +1977,6 @@
   date: July 4-5, 2023
   hindex: 10
   sub: AD
-- title: SIGGRAPH
-  year: 2023
-  id: siggraph23
-  full_name: Special Interest Group on Computer Graphics and Interactive Techniques
-  link: https://s2023.siggraph.org/
-  deadline: 2023-01-24 23:59
-  timezone: UTC
-  place: Los Angeles, USA
-  date: August 6-10, 2023
-  hindex: 19
-  sub: CV
 - title: SIGIR
   year: 2023
   id: sigir23
