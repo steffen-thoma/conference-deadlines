@@ -2510,3 +2510,23 @@
   place: Muscat, Oman
   date: February 05-07, 2024
   sub: AD
+- title: ESWC 2023
+  year: 2023
+  id: eswc2023
+  full_name: Extended Semantic Web Conference
+  link: https://2023.eswc-conferences.org/
+  deadline: 2022-12-18 23:59
+  timezone: UTC-12
+  place: Hersonissos, Greece
+  date: May 28 - June 01, 2023
+  sub: SW
+  - title: ISWC 2023
+  year: 2023
+  id: iswc2023
+  full_name: International Semantic Web Conference
+  link: https://iswc2023.semanticweb.org/
+  deadline: 2023-05-02 23:59
+  timezone: UTC-12
+  place: Athens, Greece
+  date: November 06-10, 2023
+  sub: SW
