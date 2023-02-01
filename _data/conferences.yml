@@ -2348,23 +2348,6 @@
   wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169479&copyownerid=93310
 - title: ICCV
   year: 2023
-  id: iccv23
-  full_name: International Conference on Computer Vision
-  link: https://iccv2023.thecvf.com/
-  deadline: 2023-03-08 23:59
-  timezone: America/Los_Angeles
-  place: Paris, France
-  date: September 30 - October 6, 2023
-  start: '2023-09-30'
-  end: '2023-10-06'
-  hindex: 239
-  sub: CV
-  ranking: As
-  ranking_link: http://portal.core.edu.au/conf-ranks/638
-  note: Supplementary deadline on Mar 15, 2023. More info <a href='http://iccv2023.thecvf.com/home'>here</a>.
-  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169651&copyownerid=176401
-- title: ICCV
-  year: 2023
   id: iccv2023
   full_name: International Conference on Computer Vision
   link: http://iccv2023.thecvf.com/
@@ -2376,7 +2359,10 @@
   end: '2023-10-06'
   hindex: 239
   sub: CV
+  ranking: As
+  ranking_link: http://portal.core.edu.au/conf-ranks/638
   note: Supplementary deadline on Mar 15, 2023. More info <a href='http://iccv2023.thecvf.com/home'>here</a>.
+  wikicfp: http://wikicfp.com/cfp/servlet/event.showcfp?eventid=169651&copyownerid=176401
 - title: MICCAI
   year: 2023
   id: miccai2023
