@@ -26,3 +26,6 @@
 - name: Autonomous Driving
   sub: AD
   color: "#be0aff"
+- name: Semantic Web
+  sub: SW
+  color: "#be0aff"
